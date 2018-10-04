@@ -5,32 +5,43 @@ Limitations to this library:
 
 */
 
-
 //important note, RFC
 
 export default class Calendar {
-    name: string;
+    name: string = 'calendar';
+    description: string = 'This is a calendar.';
     timezone: string = '';
+    calendarScale: string = 'GREGORIAN';
+    private prodid = '-//Jason Toolbox Oettinger//NJMS//1.0';
     Events: Event[] = [];
 
-
-    constructor(name: string) {
+    constructor(name: string, description?: string) {
         this.name = name;
+        this.description = description || 'This is a calendar.';
     }
 
-    calendarPrelude() : String {
-        return `VERSION:2.0
-        
-        `;
+    calendarPrelude(): String {
+
+
+        return 'VERSION:2.0\r\n' +
+            'PRODID:' + this.prodid + '\r\n' +
+            'CALSCALE:' + this.calendarScale + '\r\n' +
+            'X-WR-CALNAME:' + this.name + '\r\n' +
+            'X-WR-CALDESC:' + this.description + '\r\n';
+            
+    }
+
+    addEvent(options: EventOptions) {
+        this.Events.push(new Event(options));
     }
 
     toString(): string {
-
-        const eventStuff = this.Events
-            .map(e => e.toString())
-            .join('\r\n');
-
-        return 'BEGIN:VCALENDAR\n' + this.calendarPrelude() + eventStuff + 'END:VCALENDAR'; //don't forget to add the prlude
+        return 'BEGIN:VCALENDAR\r\n' +
+            this.calendarPrelude() +
+            this.Events
+                .map(e => e.toString())
+                .join('\r\n') + '\r\n' +
+            'END:VCALENDAR';
     }
 }
 
@@ -38,41 +49,74 @@ export class Event {
 
     private data: EventOptions
 
-    constructor(options : EventOptions) {
+    constructor(options: EventOptions) {
         this.data = options;
     }
 
     toString(): string {
-        return '';
+
+        const contentLines: string[] = [];
+
+        function addContentLine(property: string, value: string): void {
+            const input = property + ':' + value;
+            //thanks stackoverflow again
+            //we have to split lines at every 75th char. why? I really don't want to know, but it's in the spec.
+            const splitInput = input.match(/.{1,70}/g)
+            if (splitInput === null) {
+                throw new Error('Things are bad');
+            };
+            contentLines.push(splitInput.join('\r\n\t') + '\r\n');
+        }
+
+        addContentLine('SUMMARY', this.data.summary);
+        addContentLine('DESCRIPTION', this.data.description || 'event');
+        if (this.data.allDay) {
+            addContentLine('DTSTART;VALUE=DATE',dateToString(this.data.start, false));
+            addContentLine('DTEND;VALUE=DATE', dateToString(this.data.end, false));
+        } else {
+            addContentLine('DTSTART', dateToString(this.data.start));
+            addContentLine('DTEND', dateToString(this.data.end));
+        }
+
+        addContentLine('DTSTAMP', dateToString(new Date()));
+        addContentLine('UID', 'a' + Math.floor(Math.random() * 10000000));
+
+        return 'BEGIN:VEVENT\r\n' + contentLines.join('') + 'END:VEVENT';
     }
 }
 
-function hasNonAscii(string : string) : boolean {
+function hasNonAscii(string: string): boolean {
     return string.match(/[\x00-\x7F]/g) === null; //thanks stackoverflow
 }
 
-function foldContentLine(input: string): string {
-    //thanks stackoverflow again
-    //we have to split lines at every 75th char. why? I really don't want to know, but it's in the spec.
-    const splitInput = input.match(/.{1,2}/g)
-    if (splitInput === null) {
-        throw new Error('Things are bad');
-    };
-    return splitInput.join('\r\n\t');
+function dateToString(date: Date, useTime = true): string {
+    const timeString : string = useTime ? 'T' +
+        date.getUTCHours().toString().padStart(2, '0') +
+        date.getUTCMinutes().toString().padStart(2, '0') +
+        date.getUTCSeconds().toString().padStart(2, '0') +
+        'Z'
+        : '';
+    return date.getUTCFullYear().toString() +
+        (date.getUTCMonth() + 1).toString().padStart(2, '0') + //UTC months are zero-indexed
+        date.getUTCDate().toString().padStart(2, '0') +
+        timeString;
 }
 
 interface EventOptions {
     summary: string,
     description?: string,
     htmlDescription?: string,
-    start: Date | string,
-    end: Date | string,
+    start: Date,
+    end: Date,
     url?: string,
     uid?: string,
-
+    allDay?: boolean,
 }
 
+
+
 /*
+
 BEGIN:VEVENT
 DESCRIPTION:
 DTEND;VALUE=DATE:20180903
@@ -86,4 +130,33 @@ URL:https://rutgers.instructure.com/calendar?include_contexts=course_10507&
  month=09&year=2018#assignment_269521
 X-ALT-DESC;FMTTYPE=text/html:
 END:VEVENT
+
+        const timezone = `BEGIN:VTIMEZONE
+        TZID:Etc/UTC
+        X-LIC-LOCATION:Etc/UTC
+        BEGIN:STANDARD
+        TZOFFSETFROM:+0000
+        TZOFFSETTO:+0000
+        TZNAME:GMT
+        DTSTART:19700101T000000
+        END:STANDARD
+        END:VTIMEZONE
+        BEGIN:VTIMEZONE
+        TZID:America/New_York
+        X-LIC-LOCATION:America/New_York
+        BEGIN:DAYLIGHT
+        TZOFFSETFROM:-0500
+        TZOFFSETTO:-0400
+        TZNAME:EDT
+        DTSTART:19700308T020000
+        RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+        END:DAYLIGHT
+        BEGIN:STANDARD
+        TZOFFSETFROM:-0400
+        TZOFFSETTO:-0500
+        TZNAME:EST
+        DTSTART:19701101T020000
+        RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+        END:STANDARD
+        END:VTIMEZONE`.split(/\s+/g).join('\r\n');//split on whitespace and rejoin with correct \r\n
 */

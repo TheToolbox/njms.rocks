@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}\\compiled\\src\\index.js",
+            "program": "${workspaceRoot}\\compiled\\index.js",
             "cwd": "${workspaceRoot}",
             "sourceMaps": true,
             "outFiles": [
