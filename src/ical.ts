@@ -14,21 +14,21 @@ export default class Calendar {
     calendarScale: string = 'GREGORIAN';
     private prodid = '-//Jason Toolbox Oettinger//NJMS//1.0';
     Events: Event[] = [];
+    url: string = '';
 
-    constructor(name: string, description?: string) {
+    constructor(name: string, description?: string, url?: string) {
         this.name = name;
         this.description = description || 'This is a calendar.';
+        this.url = url || '';
     }
 
     calendarPrelude(): String {
-
-
         return 'VERSION:2.0\r\n' +
             'PRODID:' + this.prodid + '\r\n' +
             'CALSCALE:' + this.calendarScale + '\r\n' +
             'X-WR-CALNAME:' + this.name + '\r\n' +
-            'X-WR-CALDESC:' + this.description + '\r\n';
-            
+            'X-WR-CALDESC:' + this.description + '\r\n' +
+            (this.url ? 'METHOD:PUBLISH\r\nURL:' + this.url + '\r\n' : '');
     }
 
     addEvent(options: EventOptions) {
@@ -71,15 +71,16 @@ export class Event {
         addContentLine('SUMMARY', this.data.summary);
         addContentLine('DESCRIPTION', this.data.description || 'event');
         if (this.data.allDay) {
-            addContentLine('DTSTART;VALUE=DATE',dateToString(this.data.start, false));
+            addContentLine('DTSTART;VALUE=DATE', dateToString(this.data.start, false));
             addContentLine('DTEND;VALUE=DATE', dateToString(this.data.end, false));
         } else {
             addContentLine('DTSTART', dateToString(this.data.start));
             addContentLine('DTEND', dateToString(this.data.end));
         }
-
+        addContentLine('CLASS', this.data.class || 'PUBLIC');
         addContentLine('DTSTAMP', dateToString(new Date()));
-        addContentLine('UID', 'a' + Math.floor(Math.random() * 10000000));
+
+        addContentLine('UID', 'tb-' + (this.data.uid || Math.random() * 10000000));
 
         return 'BEGIN:VEVENT\r\n' + contentLines.join('') + 'END:VEVENT';
     }
@@ -90,7 +91,7 @@ function hasNonAscii(string: string): boolean {
 }
 
 function dateToString(date: Date, useTime = true): string {
-    const timeString : string = useTime ? 'T' +
+    const timeString: string = useTime ? 'T' +
         date.getUTCHours().toString().padStart(2, '0') +
         date.getUTCMinutes().toString().padStart(2, '0') +
         date.getUTCSeconds().toString().padStart(2, '0') +
@@ -111,6 +112,7 @@ interface EventOptions {
     url?: string,
     uid?: string,
     allDay?: boolean,
+    class?: string,
 }
 
 

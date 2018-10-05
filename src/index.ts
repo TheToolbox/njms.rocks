@@ -41,7 +41,7 @@ const hiid = fs.readFileSync('./HIID.csv')
     });
 
 const c = new Calendar('Class of 2022 HIID', 'updated 10-5-18');
-hiid.forEach(event => {
+hiid.forEach((event, index) => {
     event.time = event.time === 'Anytime' ? '' : event.time;
 
     let allDay : boolean = event.time.length < 3;
@@ -66,6 +66,7 @@ hiid.forEach(event => {
         end: end,
         description: event.lecturer,
         allDay: allDay,
+        uid: String(index),
     });
 });
 
