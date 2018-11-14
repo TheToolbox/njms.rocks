@@ -1,0 +1,238 @@
+0000670819 [hal] socket_hal.cpp:1048, socket_send_ex(): TRACE: Write 18 bytes to                                                                                                                                                              socket 536902440 result=0
+0000676507 [hal] socket_hal.cpp:786, read_packet_and_dispose(): TRACE: Socket 0                                                                                                                                                              receive fail 9
+0000676507 [hal] socket_hal.cpp:833, socket_receive(): TRACE: socket_receive on                                                                                                                                                              536902440 returned -9
+0000676508 [hal] socket_hal.cpp:960, socket_close(): TRACE: socket closed 20007b                                                                                                                                                             28
+0000676519 [hal] socket_hal.cpp:960, socket_close(): TRACE: socket closed 20007b                                                                                                                                                             28
+0000676519 [hal.wlan] wlan_hal.cpp:1423, wlan_connect_cancel(): TRACE: connect c                                                                                                                                                             ancel
+0000677029 [hal.wlan] wlan_hal.cpp:775, fetch_antenna_selection(): INFO: Using i                                                                                                                                                             nternal antenna
+0000677064 [hal.wlan] wlan_hal.cpp:739, wlan_connect_finalize(): INFO: Bringing                                                                                                                                                              WiFi interface up with DHCP
+0000677064 [hal.wlan] wlan_hal.cpp:1423, wlan_connect_cancel(): TRACE: connect c                                                                                                                                                             ancel
+Your device id is 1d0029001347343339383037
+Device claimed: yes
+{"p":6,"m":[{"s":16384,"l":"m","vc":30,"vv":30,"f":"b","n":"0","v":201,"d":[]},{                                                                                                                                                             "s":262144,"l":"m","vc":30,"vv":30,"f":"s","n":"1","v":310,"d":[{"f":"s","n":"2"                                                                                                                                                             ,"v":204,"_":""}]},{"s":262144,"l":"m","vc":30,"vv":30,"f":"s","n":"2","v":310,"                                                                                                                                                             d":[{"f":"s","n":"1","v":310,"_":""},{"f":"b","n":"0","v":201,"_":""}]},{"s":131                                                                                                                                                             072,"l":"m","vc":30,"vv":30,"u":"B5B5F3A6B71755FFCF302A6EBC1FFE772ACB044235807A0                                                                                                                                                             A6442B48B595B8480","f":"u","n":"1","v":5,"d":[{"f":"s","n":"2","v":207,"_":""}]}                                                                                                                                                             ,{"s":131072,"l":"f","vc":30,"vv":30,"u":"F3E70222214901A8FFF753FC721B2946FFF75E                                                                                                                                                             FC2379190707D51C49012201A8","f":"u","n":"1","v":2,"d":[{"f":"s","n":"2","v":1,"_                                                                                                                                                             ":""}]}]}
+{"sys:uptime":677,"net:stat":2,"net:err":29,"cloud:stat":0,"net:dconn":1,"cloud:                                                                                                                                                             err":0,"cloud:dconn":1,"net:rssi":{"err":-100},"pub:limit":0,"coap:unack":0,"sys                                                                                                                                                             :tram":83200,"sys:uram":51384,"net:connatt":1,"net:dconnrsn":6,"cloud:connatt":1                                                                                                                                                             ,"cloud:dconnrsn":1,"net:sigstr":{"err":-100},"net:sigqual":{"err":-100},"net:si                                                                                                                                                             gqualv":{"err":-100},"net:at":1,"net:sigstrv":{"err":-100},"_":""}
+SSID: lan] wlan_hal.cpp:638, wlan_joi0
+Security 0=unsecured, 1=WEP, 2=WPA, 3=WPA2, 4=WPA Enterprise, 5=WPA2 Enterprise:                                                                                                                                                              5
+Security Cipher 1=AES, 2=TKIP, 3=AES+TKIP: 1
+EAP Type 0=PEAP/MSCHAPv2, 1=EAP-TLS: 0
+Username: jpo69
+Password: p6E4HWBWudVbVh7A
+Outer identity (optional):
+Root CA in PEM format (optional):
+
+Thanks! Wait while I save those credentials...
+
+0000730332 [hal.wlan] wlan_hal.cpp:1165, wlan_set_enterprise_credentials(): TRACE: Trying to set EAP credentials
+0000730428 [hal.wlan] wlan_hal.cpp:1219, wlan_set_enterprise_credentials(): INFO: EAP config valid: 1
+0000730429 [hal.wlan] wlan_hal.cpp:1223, wlan_set_enterprise_credentials(): INFO: Writing EAP configuration
+0000730529 [hal.wlan] wlan_hal.cpp:1260, wlan_set_credentials(): INFO: Saving credentials
+Awesome. Now we'll connect!
+
+If you see a pulsing cyan light, your device
+has connected to the Cloud and is ready to go!
+
+If your LED flashes red or you encounter any other problems,
+visit https://www.particle.io/support to debug.
+
+    Particle <3 you!
+
+0000731595 [hal.wlan] wlan_hal.cpp:775, fetch_antenna_selection(): INFO: Using internal antenna
+0000732116 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000732117 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000732144 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000732144 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000732145 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining lan] wlan_hal.cpp:638, wlan_joi0
+0000732145 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000739149 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000739150 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000739161 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000739161 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000739652 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000739653 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000739679 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000739680 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000739680 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining lan] wlan_hal.cpp:638, wlan_joi0
+0000739681 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000746685 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000746686 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000746697 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000746697 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000747188 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000747189 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000747215 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000747216 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000747216 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining lan] wlan_hal.cpp:638, wlan_joi0
+0000747217 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000754221 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000754222 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000754233 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000754233 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000754234 [hal.wlan] wlan_hal.cpp:1423, wlan_connect_cancel(): TRACE: connect cancel
+SSID: RUHealthSciences
+Security 0=unsecured, 1=WEP, 2=WPA, 3=WPA2, 4=WPA Enterprise, 5=WPA2 Enterprise: 5
+Security Cipher 1=AES, 2=TKIP, 3=AES+TKIP: 1
+EAP Type 0=PEAP/MSCHAPv2, 1=EAP-TLS: 0
+Username: jpo69
+Password: p6E4HWBWudVbVh7A
+Outer identity (optional):
+Root CA in PEM format (optional):
+
+Thanks! Wait while I save those credentials...
+
+0000803798 [hal.wlan] wlan_hal.cpp:1165, wlan_set_enterprise_credentials(): TRACE: Trying to set EAP credentials
+0000803894 [hal.wlan] wlan_hal.cpp:1219, wlan_set_enterprise_credentials(): INFO: EAP config valid: 1
+0000803895 [hal.wlan] wlan_hal.cpp:1223, wlan_set_enterprise_credentials(): INFO: Writing EAP configuration
+0000803994 [hal.wlan] wlan_hal.cpp:1260, wlan_set_credentials(): INFO: Saving credentials
+Awesome. Now we'll connect!
+
+If you see a pulsing cyan light, your device
+has connected to the Cloud and is ready to go!
+
+If your LED flashes red or you encounter any other problems,
+visit https://www.particle.io/support to debug.
+
+    Particle <3 you!
+
+0000805061 [hal.wlan] wlan_hal.cpp:775, fetch_antenna_selection(): INFO: Using internal antenna
+0000805582 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000805583 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000805609 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000805610 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000805610 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining RUHealthSciences
+0000805610 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000812614 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000812615 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000812625 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000812625 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000813116 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000813117 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000813143 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000813144 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000813144 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining RUHealthSciences
+0000813144 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000820148 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000820149 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000820159 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000820159 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000820650 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000820651 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000820677 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000820678 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000820678 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining RUHealthSciences
+0000820679 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000827682 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000827683 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000827693 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000827693 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000827694 [hal.wlan] wlan_hal.cpp:1423, wlan_connect_cancel(): TRACE: connect cancel
+SSID: RUHealthSciences
+Security 0=unsecured, 1=WEP, 2=WPA, 3=WPA2, 4=WPA Enterprise, 5=WPA2 Enterprise: 5
+Security Cipher 1=AES, 2=TKIP, 3=AES+TKIP: 1
+EAP Type 0=PEAP/MSCHAPv2, 1=EAP-TLS: 0
+Username: jpo69
+Password: p6E4HWBWudVbVh7A
+Outer identity (optional):
+Root CA in PEM format (optional):
+
+Thanks! Wait while I save those credentials...
+
+0000849827 [hal.wlan] wlan_hal.cpp:1165, wlan_set_enterprise_credentials(): TRACE: Trying to set EAP credentials
+0000849923 [hal.wlan] wlan_hal.cpp:1219, wlan_set_enterprise_credentials(): INFO: EAP config valid: 1
+0000849923 [hal.wlan] wlan_hal.cpp:1223, wlan_set_enterprise_credentials(): INFO: Writing EAP configuration
+0000850023 [hal.wlan] wlan_hal.cpp:1260, wlan_set_credentials(): INFO: Saving credentials
+Awesome. Now we'll connect!
+
+If you see a pulsing cyan light, your device
+has connected to the Cloud and is ready to go!
+
+If your LED flashes red or you encounter any other problems,
+visit https://www.particle.io/support to debug.
+
+    Particle <3 you!
+
+0000851089 [hal.wlan] wlan_hal.cpp:775, fetch_antenna_selection(): INFO: Using internal antenna
+0000851610 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000851611 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000851637 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000851638 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000851638 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining RUHealthSciences
+0000851638 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000858642 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000858643 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000858653 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000858653 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000859144 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000859145 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000859171 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000859172 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000859173 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining RUHealthSciences
+0000859173 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000866177 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000866178 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000866188 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000866188 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000866679 [hal.wlan] wlan_hal.cpp:600, wlan_join(): TRACE: Free RAM before suppl: 52320
+0000866680 [hal.wlan] wlan_hal.cpp:417, wlan_supplicant_start(): TRACE: Starting supplicant
+besl_host_malloc: supplicant host 188
+besl_host_malloc: supplicant buffer 3500
+besl_host_malloc: supplicant host 80
+0000866707 [hal.wlan] wlan_hal.cpp:512, wlan_supplicant_start(): TRACE: Supplicant started 0
+0000866707 [hal.wlan] wlan_hal.cpp:610, wlan_join(): TRACE: Free RAM after suppl: 34784
+0000866708 [hal.wlan] wlan_hal.cpp:618, wlan_join(): INFO: Joining RUHealthSciences
+0000866708 [hal.wlan] wlan_hal.cpp:620, wlan_join(): TRACE: Free RAM connect: 34784
+0000873712 [hal.wlan] wlan_hal.cpp:623, wlan_join(): ERROR: wiced_join_ap_specific(), result: 1024
+in use: 1 0 0
+in use a: 1 0 0
+Supplicant aborted
+0000873713 [hal.wlan] wlan_hal.cpp:534, wlan_supplicant_stop(): TRACE: Stopping supplicant
+0000873723 [hal.wlan] wlan_hal.cpp:551, wlan_supplicant_stop(): TRACE: Supplicant stopped
+0000873723 [hal.wlan] wlan_hal.cpp:638, wlan_join(): TRACE: Free RAM after suppl stop: 52320
+0000873724 [hal.wlan] wlan_hal.cpp:1423, wlan_connect_cancel(): TRACE: connect cancel
