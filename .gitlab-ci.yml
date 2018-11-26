@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+  - deploy
+
+job 1:
+  stage: build
+  script: for D in */; do docker build "${D}"; done
+
+job 3:
+  stage: test
+  script: uhh do tests somehow...
+
+job 4:
+  stage: deploy
+  script: docker-compose up

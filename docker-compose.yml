@@ -1,0 +1,27 @@
+version: '3'
+services:
+  static:
+    build: ./build
+    depends_on:
+      - db
+      - sensors
+  sensors:
+    build: ./sensors
+  db:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /db
+    volumes:
+      - "/db:/db" #share /db with host
+  webserver:
+    image: httpd
+    ports:
+      - 80:80
+    volumes:
+      - "static:/webroot/static" #share volume with static
+      - "well_known:/webroot/.well_known" #share volume with certbot
+  certbot:
+    image: certbot
+    #run in webroot mode

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>What temperature is B556 today?</title>
+    <!-- Load c3.css -->
+    <!--<link href="/path/to/c3.css" rel="stylesheet">-->
+
+    <!-- Load d3.js and c3.js -->
+    <!--<script src="/path/to/d3.v5.min.js" charset="utf-8"></script>
+    <script src="/path/to/c3.min.js"></script>-->
+</head>
+
+<body>
+    <h1>What temperature is B556?</h1>
+    <p id="temp">20C, 72F</p>
+    <canvas id="temp-history"></canvas>
+</body>
+<script>
+    var trace1 = {
+        x: [1, 2, 3, 4],
+        y: [10, 15, 13, 17],
+        type: 'scatter'
+    };
+
+    var trace2 = {
+        x: [1, 2, 3, 4],
+        y: [16, 5, 11, 9],
+        type: 'scatter'
+    };
+
+    var data = [trace1, trace2];
+
+    Plotly.newPlot('myDiv', data);
+</script>
+
+</html>
