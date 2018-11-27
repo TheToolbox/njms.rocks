@@ -78,11 +78,9 @@ function generateCalendar(fileName: string) {
             uid: String(index),
         });
     });
+
+    fs.writeFileSync(calendarDir + '/' + calendarName + '.ical', c.toString());
 }
-
-
-console.log(c.toString());
-//console.log(hiid);
 
 function timezone(date: Date): string {
     //works only for Eastern Time observed by NJ

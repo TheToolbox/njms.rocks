@@ -24,4 +24,7 @@ services:
       - "well_known:/webroot/.well_known" #share volume with certbot
   certbot:
     image: certbot
-    #run in webroot mode
+    # run in webroot mode
+    # share validation folder with webserver in appropriate directory
+    # overwrite self-signed certs included with apache
+    
