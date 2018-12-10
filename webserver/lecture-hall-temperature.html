@@ -16,12 +16,14 @@
     <canvas id="temp-history"></canvas>
 </body>
 <script>
-    (function() {
-        setInterval(function() {
+    (function () {
+        setInterval(function () {
             fetch('/api/temperatures')
-                .then(function(response) {
+                .then(function (response) {
+                    if (!response.ok) { return console.error('Error from /api/temperatures'); }
                     const data = response.json();
-                    document.getElementById('temp').innerHTML = data.temperature + '';
+                    console.log(data);
+                    document.getElementById('temp').innerHTML = data.temperature;
                 });
         }, 10049);
     })();
