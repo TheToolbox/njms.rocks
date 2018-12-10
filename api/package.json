@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.10",
+    "@types/node-persist": "0.0.33",
     "@types/pg": "^7.4.11",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
