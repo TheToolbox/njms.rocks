@@ -54,7 +54,7 @@ void loop()
   {
     if (sensor.searchDone())
     {
-      delay(250);
+      delay(500);
     }
   }
 }
