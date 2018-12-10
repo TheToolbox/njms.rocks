@@ -8,18 +8,59 @@
     <!-- Load d3.js and c3.js -->
     <!--<script src="/path/to/d3.v5.min.js" charset="utf-8"></script>
     <script src="/path/to/c3.min.js"></script>-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=K2D');
+
+        html {
+            background: repeating-linear-gradient(135deg,
+                #2e2e2e,
+                #2e2e2e 5em,
+                #3f3f3f 5em,
+                #3f3f3f 10em);
+            background-size: 14.142135623730951em 14.142135623730951em;
+        }
+
+        body {
+            max-width: 760px;
+            font-family: 'K2D', sans-serif;
+            background-color: white;
+            margin: auto;
+            margin-top: 1em;
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1 {
+            color: #cc0033;
+            /*text-decoration: underline;*/
+            font-weight: bold;
+        }
+
+        #temp {
+            font-size: 5em;
+        }
+
+        footer {
+            margin-top: 2em;
+            font-size: 90%;
+        }
+
+        footer>p {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
     <h1>What temperature is B556?</h1>
-    <p id="temp">70</p>
-    <canvas id="temp-history"></canvas>
+    <p id="temp">70 &#176;F</p>
 </body>
 <script>
     setInterval(function () {
         fetch('/api/temperatures')
             .then(response => response.json())
-            .then(data => document.getElementById('temp').innerHTML = data.temperature);
+            .then(data => document.getElementById('temp').innerHTML = data.temperature + ' &#176;F');
     }, 10049);
 </script>
 
