@@ -20,6 +20,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                     const data = JSON.parse(body);
                     console.log("Got new temperature: " + data.temperature);
                     await persist.setItem('temperature', data.temperature);
+                    await persist.setItem('time', Date.now());
                     return response.end();
                 } catch (e) {
                     response.statusCode = 400;
@@ -27,7 +28,8 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                 }
             case 'GET /temperatures':
                 const temp = await persist.getItem('temperature');
-                return response.end(JSON.stringify({ temperature: temp }));
+                const time = await persist.getItem('time');
+                return response.end(JSON.stringify({ temperature: temp, time: time }));
         }
         console.log(method + ' ' + url.pathname);
         const body = await getBody(request);
