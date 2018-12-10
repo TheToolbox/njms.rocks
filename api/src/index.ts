@@ -18,6 +18,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                 const body = await getBody(request);
                 try {
                     const data = JSON.parse(body);
+                    console.log("Got new temperature: " + data.temperature);
                     await persist.setItem('temperature', data.temperature);
                     return response.end();
                 } catch (e) {
