@@ -7,10 +7,11 @@ job 1:
   stage: build
   script: for D in */; do docker build "${D}"; done
 
-job 3:
+job 2:
   stage: test
-  script: uhh do tests somehow...
+  script: echo "This step is not done"
 
-job 4:
+job 3:
   stage: deploy
-  script: docker-compose up
+  script: docker-compose up --build -d
+  
