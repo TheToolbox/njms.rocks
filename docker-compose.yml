@@ -1,12 +1,9 @@
 version: '3'
 services:
-  static:
-    build: ./build
-    depends_on:
-      - db
-      - sensors
-  sensors:
-    build: ./sensors
+  api:
+    build: ./api
+#  sensors:
+#    build: ./sensors
   db:
     image: postgres:11-alpine
     restart: always
@@ -16,14 +13,14 @@ services:
     volumes:
       - "/db:/db" #share /db with host
   webserver:
-    image: httpd
+    build: ./webserver
     ports:
       - 80:80
-    volumes:
-      - "static:/webroot/static" #share volume with static
-      - "well_known:/webroot/.well_known" #share volume with certbot
-  certbot:
-    image: certbot
+      - 443:443
+#    volumes:
+#      - "well_known:/webroot/.well_known" #share volume with certbot
+  #certbot:
+    #image: certbot
     # run in webroot mode
     # share validation folder with webserver in appropriate directory
     # overwrite self-signed certs included with apache
