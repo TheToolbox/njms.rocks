@@ -1,18 +1,50 @@
 import * as http from 'http';
 import * as URL from 'url';
+import * as persist from 'node-persist';
 
-const server = http.createServer(respond);
-server.listen(80);
+(async function init() {
+    const p = await persist.init();
 
-function respond(request: http.IncomingMessage, response: http.ServerResponse) {
-    const method = (request.method || '').toLowerCase();
-    const url = URL.parse(request.url || '');
-    switch(method + ' ' + url.pathname) {
-        case 'POST /api/temperatures':
-            //add to list;
-        case 'GET /api/temperatures':
-            //get from list
+    const server = http.createServer(respond);
+    server.listen(80);
+})();
+
+async function respond(request: http.IncomingMessage, response: http.ServerResponse) {
+    try {
+        const method = (request.method || '').toUpperCase();
+        const url = URL.parse(request.url || '');
+        switch (method + ' ' + url.pathname) {
+            case 'POST /temperatures':
+                const body = await getBody(request);
+                try {
+                    const data = JSON.parse(body);
+                    await persist.setItem('temperature', data.temperature);
+                    return response.end();
+                } catch (e) {
+                    response.statusCode = 400;
+                    return response.end(err('malformed input', e));
+                }
+            case 'GET /temperatures':
+                const temp = await persist.getItem('temperature');
+                return response.end(JSON.stringify({ temperature: temp }));
+        }
+        console.log(method + ' ' + url.pathname);
+        const body = await getBody(request);
+        response.end(body);
+    } catch (e) {
+        response.end(err('Internal Server Error', e));
     }
+}
 
-    response.end('{"error": "Not yet implemented."}');
+async function getBody(request: http.IncomingMessage): Promise<string> {
+    let data = '';
+    request.on('data', d => data += d);
+    return new Promise<string>(resolve => request.on('end', () => resolve(data)));
+}
+
+function err(info: string, context: Error) {
+    return JSON.stringify({
+        error: info,
+        string: context,
+    });
 }

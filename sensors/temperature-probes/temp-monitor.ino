@@ -25,15 +25,20 @@ http_header_t headers[] = {
 http_request_t request;
 http_response_t response;
 
+float temp = 22.0;
+Timer get_temp_timer(1000, get_temp);
+Timer send_data_timer(10000, send_data);
+
 void setup()
 {
   Serial.begin(9600);
+  send_data();
+  get_temp_timer.start();
+  send_data_timer.start();
 }
 
 void loop() {}
 
-float temp = 22.0;
-Timer get_temp_timer(1000, get_temp);
 void get_temp()
 {
   sensor.read();
@@ -41,12 +46,11 @@ void get_temp()
   temp = (29.0 * temp + sensor.celsius()) / 30.0;
 }
 
-Timer send_data_timer(30000, send_data);
 void send_data()
 {
-  request.hostname = "njms.rocks";
+  request.hostname = "tribble.ga";//"njms.rocks";
   request.port = 80;
-  request.path = "/api/temperature";
+  request.path = "/api/temperatures";
   request.body = "{\"temperature\":\"" + String(temp) + "\"}";
 
   http.post(request, response, headers);
