@@ -18,7 +18,7 @@
 <script>
     (function() {
         setInterval(function() {
-            fetch('//api/temperatures')
+            fetch('/api/temperatures')
                 .then(function(response) {
                     const data = response.json();
                     document.getElementById('temp').innerHTML = data.temperature + '';
