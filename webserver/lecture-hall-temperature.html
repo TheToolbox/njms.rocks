@@ -125,7 +125,7 @@
             .then(response => response.json())
             .then(data => {
                 document.getElementById('temp').innerHTML = data.temperature.substring(0, 5) + ' &#176;F';
-                document.getElementById('timestamp').innerHTML = 'Last updated ' + (new Date(data.time)).toISOString();
+                document.getElementById('timestamp').innerHTML = 'Last updated ' + (new Date(data.time)).toLocaleTimeString();
             });
     }
 
