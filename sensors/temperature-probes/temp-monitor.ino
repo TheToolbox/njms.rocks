@@ -27,12 +27,19 @@ http_response_t response;
 
 float temp = 0.0;
 Timer send_data_timer(10000, send_data);
+Timer restart_timer(24 * 60 * 61 * 10000, daily_reset);
+
+void daily_reset()
+{
+  //System.reset();
+  //Disabled for bug hunting
+}
 
 void setup()
 {
   Serial.begin(9600);
-  send_data();
   send_data_timer.start();
+  restart_timer.start();
 }
 
 void loop()
@@ -61,10 +68,14 @@ void loop()
 
 void send_data()
 {
+  char body[40];
+
+  snprintf(body, 20, "{\"temperature\":\"%2.2f\"}", temp);
+
   request.hostname = "tribble.ga"; //"njms.rocks";
   request.port = 80;
   request.path = "/api/temperatures";
-  request.body = "{\"temperature\":\"" + String(temp) + "\"}";
+  request.body = body;
 
   http.post(request, response, headers);
 }
