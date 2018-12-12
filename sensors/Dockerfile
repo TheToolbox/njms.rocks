@@ -11,5 +11,5 @@ RUN apt-get remove -y python curl && \
     apt-get autoremove -y
 ADD temperature-probe/* .
 CMD particle login && \
-    particle compile photon temperature-probe && \
+    particle compile photon --target=0.8.0-rc.11 temperature-probe && \
     particle flash all-stuff with-the-result

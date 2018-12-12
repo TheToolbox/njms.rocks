@@ -14,6 +14,7 @@ power it gets more picky about the value.
 #include "DS18.h"
 #include "HttpClient.h"
 
+SerialLogHandler logHandler;
 DS18 sensor(D0);
 
 HttpClient http;
@@ -26,26 +27,38 @@ http_request_t request;
 http_response_t response;
 
 float temp = 0.0;
-Timer send_data_timer(10000, send_data);
-Timer restart_timer(24 * 60 * 61 * 10000, daily_reset);
-
-void daily_reset()
-{
-  //System.reset();
-  //Disabled for bug hunting
-}
 
 void setup()
 {
   Serial.begin(9600);
-  send_data_timer.start();
-  restart_timer.start();
+  Log("Timers started!");
 }
 
+int data_time = millis();
+int sensor_time = millis();
+int reset_time = millis();
 void loop()
+{
+  if (millis() - sensor_time > 250)
+  {
+    get_data();
+    sensor_time = millis();
+  }
+  if (millis() - data_time > 10000)
+  {
+    send_data();
+    data_time = millis();
+  }
+  if (millis() - reset_time > 1000 * 60 * 61 * 24) {
+    System.reset();
+  }
+}
+
+void get_data()
 {
   if (sensor.read())
   {
+    Log("Temperature read");
     float reading = sensor.fahrenheit();
     if (temp < 0.1 && temp > -0.1)
     {
@@ -61,21 +74,24 @@ void loop()
   {
     if (sensor.searchDone())
     {
-      delay(500);
+      Log("Search Done, sleeping for a moment.");
     }
   }
 }
 
 void send_data()
 {
+  Log("Sending data...");
   char body[40];
 
-  snprintf(body, 20, "{\"temperature\":\"%2.2f\"}", temp);
+  snprintf(body, 40, "{\"temperature\":\"%2.2f\"}", temp);
+  Log(body);
 
   request.hostname = "tribble.ga"; //"njms.rocks";
   request.port = 80;
   request.path = "/api/temperatures";
   request.body = body;
-
+  Log("About to send data!");
   http.post(request, response, headers);
+  Log("data sent!");
 }
