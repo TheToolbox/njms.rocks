@@ -43,3 +43,5 @@ sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw allow https
 yes | sudo ufw enable
+
+mkdir -p /db
