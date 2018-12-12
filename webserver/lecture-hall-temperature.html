@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <title>What temperature is B556 today?</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>❄️What temperature is B556 today?❄️</title>
     <!-- Load c3.css -->
     <!--<link href="/path/to/c3.css" rel="stylesheet">-->
 
@@ -124,7 +125,7 @@
         return fetch('/api/temperatures')
             .then(response => response.json())
             .then(data => {
-                document.getElementById('temp').innerHTML = data.temperature.substring(0, 5) + ' &#176;F';
+                document.getElementById('temp').innerHTML = ('' + data.temperature).substring(0, 5) + ' &#176;F';
                 document.getElementById('timestamp').innerHTML = 'Last updated ' + (new Date(data.time)).toLocaleTimeString();
             });
     }
