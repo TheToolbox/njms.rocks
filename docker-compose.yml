@@ -4,10 +4,16 @@ services:
     build: ./api
 #  sensors:
 #    build: ./sensors
+    environment:
+      #SIMULATE_SENSORS: please do
+      PGHOST: db
+      PGUSER: postgres
+      PGPASSWORD: postgres
   db:
     image: postgres:11-alpine
     restart: always
     environment:
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       PGDATA: /db
     volumes:
