@@ -1,12 +1,30 @@
 import * as http from 'http';
 import * as URL from 'url';
 import * as persist from 'node-persist';
+import * as db from './db';
 
 (async function init() {
     const p = await persist.init();
 
+    console.log('Starting API server...');
     const server = http.createServer(respond);
     server.listen(80);
+
+    if (process.env['SIMULATE_SENSORS']) {
+
+        console.log('DEV OPTION ENABLED: Simulating sensors...');
+        let sim_temp = 70;
+        setInterval(() => {
+            const req = http.request({
+                method: 'POST',
+                host: 'localhost',
+                path: '/temperatures',
+            });
+            req.end(JSON.stringify({
+                temperature: sim_temp += Math.random() - 0.5
+            }));
+        }, 1000);
+    }
 })();
 
 async function respond(request: http.IncomingMessage, response: http.ServerResponse) {
@@ -21,6 +39,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                     console.log("Got new temperature: " + data.temperature);
                     await persist.setItem('temperature', data.temperature);
                     await persist.setItem('time', Date.now());
+                    await db.addTemp(Number(data.temperature));
                     return response.end();
                 } catch (e) {
                     response.statusCode = 400;
@@ -29,6 +48,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
             case 'GET /temperatures':
                 const temp = await persist.getItem('temperature');
                 const time = await persist.getItem('time');
+
                 return response.end(JSON.stringify({ temperature: temp, time: time }));
         }
         console.log(method + ' ' + url.pathname);
