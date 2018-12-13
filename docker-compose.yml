@@ -25,6 +25,32 @@ services:
       - 443:443
 #    volumes:
 #      - "well_known:/webroot/.well_known" #share volume with certbot
+  #mongo:
+   # image: mongo
+    #volumes:
+    #  - ./data/runtime/db:/data/db
+    #  - ./data/dump:/dump
+    #command: mongod --smallfiles
+  #chat:
+   # image: rocketchat/rocket.chat:latest
+   # environment:
+   #   - MONGO_URL=mongodb://mongo:27017/rocketchat
+   #   - ROOT_URL=https://localhost/chat
+   #   - Accounts_UseDNSDomainCheck=True
+  #  depends_on:
+  #    - mongo
+  #hubot:
+  #  image: rocketchat/hubot-rocketchat:latest
+  #  environment:
+  #    - ROCKETCHAT_URL=rocketchat:3000
+  #    - ROCKETCHAT_ROOM=GENERAL
+  #    - ROCKETCHAT_USER=Botname
+  #    - ROCKETCHAT_PASSWORD=BotPassw0rd
+  #    - BOT_NAME=Botname
+  #    - EXTERNAL_SCRIPTS=hubot-help,hubot-seen,hubot-links,hubot-greetings
+    # this is used to expose the hubot port for notifications on the host on port 3001, e.g. for hubot-jenkins-notifier
+  #  ports:
+  #    - 3001:8080
   #certbot:
     #image: certbot
     # run in webroot mode
