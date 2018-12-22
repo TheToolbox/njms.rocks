@@ -1,163 +1,220 @@
-"Tue, Oct 9",08:30:00 AM,0.5,,Calm Mentor Course Introduction,
-"Tue, Oct 9",09:00:00 AM,1,,Mandatory Module 2 Orientation,Stephen Garrett; Ian Whitehead
-"Tue, Oct 9",10:00:00 AM,1,L1,Lecture: Hematopoiesis,Elaine Keohane
-"Tue, Oct 9",11:00:00 AM,1,L2,Lecture: Functional Organization of the Immune System,Nick Ponzio
-"Tue, Oct 9",01:00:00 PM,1,,HESJ1 Lecture: Adverse Childhood Experience,Beth Pletcher
-"Tue, Oct 9",02:00:00 PM,2,,HESJ1 Small Group Session: Adverse Childhood Experience,Faculty
-"Wed, Oct 10",09:00:00 AM,1,L3,Lecture: Antibodies and Antigens,Aimee Beaulieu
-"Wed, Oct 10",10:00:00 AM,1,L4,Lecture: Innate Immunity I,Patricia Fitzgerald - Bocarsly
-"Wed, Oct 10",11:00:00 AM,1,L5,Lecture: Innate Immunity II & Complement,Aimee Beaulieu; Christine Rohowsky-Kochan
-"Wed, Oct 10",02:00:00 PM,4,,Global Health Event,Harshe Sule; Ziad Sifri
-"Thu, Oct 11",09:00:00 AM,1,L6,Lecture: Acute Inflammation,Kenneth Klein
-"Thu, Oct 11",10:00:00 AM,1,L7,Lecture: Chronic Inflammation,Kenneth Klein
-"Thu, Oct 11",11:00:00 AM,1,L8,Lecture: Wound Healing,Kenneth Klein
-"Thu, Oct 11",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
-"Fri, Oct 12",09:00:00 AM,3,,TBL #1A - Lymphoid Tissue,DeFouw; Varricchio; Keohane
-"Fri, Oct 12",01:00:00 PM,3,,TBL #1B - Lymphoid Tissue,DeFouw; Varricchio; Keohane
-"Mon, Oct 15",09:00:00 AM,1,L9,Lecture: Major Histocompatibility Complex,Christine Rohowsky-Kochan
-"Mon, Oct 15",10:00:00 AM,1,L10,Lecture: Antigen Processing and Presentation,Christine Rohowsky-Kochan
-"Tue, Oct 16",09:00:00 AM,1,L11,Lecture: Generation of Diversity: Gene rearrangement in Ig & TCR,Joan Durbin
-"Tue, Oct 16",10:00:00 AM,1,L12,Lecture: T Cell Maturation and Differentiation,Christine Rohowsky-Kochan
-"Tue, Oct 16",11:00:00 AM,1,L13,Lecture: T Cell Activation,Christine Rohowsky-Kochan
-"Tue, Oct 16",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
-"Tue, Oct 16",,,,Online IPE Exercise,
-"Wed, Oct 17",09:00:00 AM,1,L14,Lecture: Effector Mechanisms: Cell-Mediated Immunity,Nick Ponzio
-"Wed, Oct 17",10:00:00 AM,1,L15,Lecture: Effector Mechanisms: Humoral Immunity,Joan Durbin
-"Wed, Oct 17",11:00:00 AM,1,L16,Lecture: Hypersensitivities,Padmini Salgame
-"Wed, Oct 17",12:00:00 PM,1,,Reserved,
-"Wed, Oct 17",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
-"Wed, Oct 17",,,,Online IPE exercise,
-"Thu, Oct 18",09:00:00 AM,1,L17,Lecture: Diagnostic Tests,Amariliz Rivera - Medina (podcast)
-"Thu, Oct 18",10:00:00 AM,1,L18,Lecture: Tolerance and Autoimmunity,Mark Siracusa
-"Thu, Oct 18",11:00:00 AM,1,L19,Lecture: Transplantation Immunology,Joan Durbin
-"Thu, Oct 18",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
-"Thu, Oct 18",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
-"Thu, Oct 18",,,,Online IPE Exercise,
-"Fri, Oct 19",09:00:00 AM,2,,POPS1: Hypersensitivities,
-"Fri, Oct 19",11:00:00 AM,1,L20,Lecture: Mucosal Immunity,Karen Edelblum
-"Fri, Oct 19",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
-"Mon, Oct 22",09:00:00 AM,1,L21,Lecture: Vaccines,Patricia Fitzgerald - Boserly
-"Mon, Oct 22",10:00:00 AM,1,L22,Lecture: Immunodeficiency Diseases,Patricia Fitzgerald-Bocarsly
-"Mon, Oct 22",11:00:00 AM,1,L23,Lecture: Tumor Immunology,Nick Ponzio
-"Tue, Oct 23",09:00:00 AM,2,,POPS 2 Tetanus,Facilitators
-"Tue, Oct 23",01:00:00 PM,1,,PCMI/HESJI Lecture: Caring for Patients with Limited Health Literacy,Michelle Dalla Piazza
-"Tue, Oct 23",02:00:00 PM,2,,PCMI/HESJI Small Group Session : Caring for Patients with Limited Health Literacy,Patients
-"Wed, Oct 24",Anytime,1,,Self Directed Learning,
-"Thu, Oct 25",Anytime,1,,Self Directed Learning,
-"Fri, Oct 26",09:00:00 AM,2,,Exam 1: Immunology,
-"Fri, Oct 26",11:00:00 AM,0.5,,Exam 1: Wall Review,
-"Mon, Oct 29",09:00:00 AM,1,L24,Lecture: Hematology CBC,Elaine Keohane
-"Mon, Oct 29",10:00:00 AM,1,L25,Lecture: RBC Physiology and Hemodyanmics,Elaine Keohane
-"Mon, Oct 29",11:00:00 AM,0.5,,Mandatory Patient Case Presentation: Sickle Cell,Frank Desposito
-"Mon, Oct 29",12:00:00 PM,1,L26,Lecture: Red Blood Cell Disorders - Hemoglobinopathies,Frank Desposito
-"Tue, Oct 30",09:00:00 AM,1,L27,Lecture: Anemia - Destruction/Production I,Elaine Keohane
-"Tue, Oct 30",10:00:00 AM,1,L28,Lecture: Anemia Destruction/Production II,Elaine Keohane
-"Tue, Oct 30",11:00:00 AM,1,L29,Lecture: Leukocytosis,David Cennimo
-"Tue, Oct 30",01:00:00 PM,1,,PCM1 /HESJ1 Lecture : Medical Interpreter,Michelle Dalla Piazza
-"Tue, Oct 30",02:00:00 PM,2,,PCM1 /HESJ1 Small Group Session: Medical Interpreter,Faculty
-"Wed, Oct 31",09:00:00 AM,1,L30,Lecture: Platelet/megakaryocyte Disorders,Elaine Keohane
-"Wed, Oct 31",10:00:00 AM,1,L31,Lecture: Hemostasis/Thrombosis/Embolism,Kenneth Klein
-"Wed, Oct 31",11:00:00 AM,1,L32,Lecture: Drugs for management of thrombogenesis,Lester Sultatos
-"Wed, Oct 31",12:00:00 PM,1,,Engage Mentor Meeting with Food,
-"Thu, Nov 1",09:00:00 AM,2,,POPS 3 Anemia,Faculty
-"Thu, Nov 1",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
-"Fri, Nov 2",09:00:00 AM,1,L33,Lecture: Nature of Cancer I,Ian Whitehead
-"Fri, Nov 2",10:00:00 AM,1,L34,Lecture: Nature of Cancer II,Ian Whitehead
-"Fri, Nov 2",11:00:00 AM,1,L35,Lecture: Nature of Cancer III,Ian Whitehead
-"Mon, Nov 5",09:00:00 AM,1,L36,Lecture: Clinical Manifestations of Cancer,David Cennimo
-"Mon, Nov 5",10:00:00 AM,1,L37,Lecture: Hematologic Neoplastic Disorders - Lymphoma,Ian Whitehead
-"Mon, Nov 5",11:00:00 AM,1,L38,Lecture: Hematologic Neoplastic Disorders - Lymphoma,Ian Whitehead
-"Tue, Nov 6",09:00:00 AM,1,L39,Lecture: Hematologic Neooplastic Disorders - Leukemia,Pankoori Saraf
-"Tue, Nov 6",10:00:00 AM,1,L40,"Lecture: Hematologic Neoplastics Disorders - Myelodysplasia, MPD, BMT Plasma",Pankoori Saraf
-"Wed, Nov 7",09:00:00 AM,1,L41,"Lecture: Treatment of Cancer, Alkylating Agents",Virgil Muresan
-"Wed, Nov 7",10:00:00 AM,1,L42,"Lecture: Treatment of Cancer, Alkylating agents",Virgil Muresan
-"Wed, Nov 7",12:00:00 PM,1,,Reserved,
-"Thu, Nov 8",09:00:00 AM,1,L43,Lecture: Targeted Therapy,Virgil Muresan
-"Fri, Nov 9",01:30:00 PM,1,L44,Lecture: Approaches to Bleeding Review,Sangeeta Lamba
-"Fri, Nov 9",03:00:00 PM,2,,Heme/Onc Review,Faculty
-"Mon, Nov 12",09:00:00 AM,2,,Exam 2: Hem/Onc,
-"Mon, Nov 12",11:00:00 AM,0.5,,Exam 2: Wall Review,
-"Tue, Nov 13",09:00:00 AM,1,L45,Lecture: Intro to Pathogens and Bacterial Structures,Stephen Garrett
-"Tue, Nov 13",10:00:00 AM,1,L46,Lecture: Bacterial Growth and Metabolism,Stephen Garrett
-"Tue, Nov 13",11:00:00 AM,1,L47,Lecture: Immunity to Bacteria,Amariliz Rivera-Medina
-"Tue, Nov 13",01:00:00 PM,1,,PCM1 Lecture : Domestic Violence,Ping-Hsin Chen
-"Tue, Nov 13",02:00:00 PM,2,,PCM1 Small Group Session: Standardized Patient,Faculty
-"Wed, Nov 14",09:00:00 AM,1,L48,"Lecture: Bacterial Replication, Recombination",M Zafri Humayun
-"Wed, Nov 14",10:00:00 AM,1,L49,Lecture: Bacterial Gene Transfer and Expression,M Zafri Humayun
-"Wed, Nov 14",11:00:00 AM,1,L50,Lecture: Antimicrobial targets and resistance I,Stephen Garrett
-"Wed, Nov 14",12:00:00 PM,1,,Reserved,
-"Thu, Nov 15",09:00:00 AM,1,L51,Lecture: Antimicrobial targets and resistance II,Stephen Garrett
-"Thu, Nov 15",10:00:00 AM,1,L52,Lecture: Normal Flora,Stephen Garrett
-"Thu, Nov 15",11:00:00 AM,1,L53,Lecture: Mechanisms of Pathogenesis,Stephen Garrett
-"Thu, Nov 15",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
-"Fri, Nov 16",09:00:00 AM,1,L54,Lecture: Toxins & Toxigenic Bacteria,Stephen Garrett
-"Fri, Nov 16",10:00:00 AM,1,L55,Lecture: Gm+ Pyogenic - Staph,Stephen Garrett
-"Fri, Nov 16",11:00:00 AM,1,L56,Lecture: Gm+ Pyogenic - Strep,Stephen Garrett
-"Fri, Nov 16",01:30:00 PM,3,,CANCELED: OR Training,University Hospital
-"Mon, Nov 19",09:00:00 AM,1,L57,Lecture: Bacteria of CNS,Stephen Garrett
-"Mon, Nov 19",10:00:00 AM,2,L58,Lecture: Bacteria Respiratory,David Kaback
-"Mon, Nov 19",11:00:00 AM,1,L59,Lecture: Mycobacteria and Actinomycetes,M Zafri Humayun
-"Tue, Nov 20",09:00:00 AM,2,,POPS 4 Tuberculosis,Facilitators
-"Tue, Nov 20",11:00:00 AM,1,L60,Lecture: Bacteria Urogenital I,Nikhat Parveen
-"Tue, Nov 20",12:00:00 PM,1,L61,Lecture: Bacteria Urogenital II,Nikhat Parveen
-"Tue, Nov 20",01:00:00 PM,1.5,,"PCM1 Lecture: Introduction to Clnical Ethical Principles, Humanism, and Professionalism",Pat Murphy; Chantal Brazeau
-"Tue, Nov 20",02:30:00 PM,1.5,,"PCM1: Introduction to Clinical Ethical Principles, Humanism, and Professionalism Small Group Session",Faculty
-"Wed, Nov 21",09:00:00 AM,1,L62,Lecture: Bacteria GI I,Matt Neiditch
-"Wed, Nov 21",10:00:00 AM,1,L63,Lecture: Bacteria GI II,Matt Neiditch
-"Wed, Nov 21",12:00:00 PM,1,,Reserved,
-"Mon, Nov 26",09:00:00 AM,1,L64,Lecture: Zoonoses,David Kaback
-"Mon, Nov 26",10:00:00 AM,1,L65,Lecture: Rickettsial Disease,David Kaback
-"Mon, Nov 26",11:00:00 AM,1,L66,Lecture: Penicillins,Debkumar Pain
-"Tue, Nov 27",09:00:00 AM,1,L67,Lecture: Sulfas/Quinilones/UTI Disinfectants,Virgil Muresan
-"Tue, Nov 27",10:00:00 AM,1,L68,Lecture: Cephalosporins/Vancomycin/Streptogramins,Joel Freundlich
-"Tue, Nov 27",11:00:00 AM,1.5,L69,Lecture: Macrolides/Clindamycin//Tetracycline/Chloramphenicol/Aminoglycosides,Joel Freundlich
-"Tue, Nov 27",01:00:00 PM,1,,PCM1 Podcast: Capacity/Competence and Informed Consent,David Price
-"Tue, Nov 27",02:00:00 PM,2,,PCM1 Small Group Session: Capacity/Competence and Informed Consent,Faculty
-"Wed, Nov 28",09:00:00 AM,1,L70,Lecture: Anti-TB Drugs,Pradeep Kumar
-"Wed, Nov 28",10:00:00 AM,2,,Bacteriology Review,Stephen Garrett
-"Wed, Nov 28",12:00:00 PM,1,,Reserved,
-"Wed, Nov 28",01:00:00 PM,5,,PCM1: Cancer Patient Interview (1/3 class),
-"Thu, Nov 29",09:00:00 AM,1,L71,Lecture: Pathology of Bacterial Infectious Disease,Kenneth Klein
-"Fri, Nov 30",09:00:00 AM,1,,Self Directed Learning,
-"Mon, Dec 3",09:00:00 AM,2,,Exam 3: Bacterial,
-"Mon, Dec 3",11:00:00 AM,0.5,,Exam 3: Wall Review,
-"Tue, Dec 4",09:00:00 AM,1,L72,Lecture: Fungi and Fungal Diseases I,David Kaback
-"Tue, Dec 4",10:00:00 AM,1,L73,Lecture: Fungi and Fungal Diseases II,David Kaback
-"Tue, Dec 4",11:00:00 AM,1,L74,Lecture: Antifungals,Virgil Muresan
-"Tue, Dec 4",01:00:00 PM,1,,PCM1 Lecture: Delivering Bad News,Pat Murphy
-"Tue, Dec 4",02:00:00 PM,2,,PCM1 Small Group Session: Delivering Bad News,Faculty
-"Wed, Dec 5",09:00:00 AM,1,L75,Lecture: Parasites and Disease I,Vivian Bellofatto
-"Wed, Dec 5",10:00:00 AM,1,L76,Lecture: Parasites and Disease II,Vivian Bellofatto
-"Wed, Dec 5",11:00:00 AM,1,L77,Lecture: Parasites and Disease III and Immunity,Vivian Bellofatto
-"Wed, Dec 5",12:00:00 PM,1,,Reserved,
-"Thu, Dec 6",09:00:00 AM,1,L78,Lecture: Antiprotozoal/antihelminthic Drugs,Debkumar Pain
-"Thu, Dec 6",10:00:00 AM,1,L79,Lecture: Introduction to Animal Virology I,Ian Whitehead
-"Thu, Dec 6",11:00:00 AM,1,L80,Lecture: Introduction to Animal Virology II,Ian Whitehead
-"Thu, Dec 6",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience MAKE UP DATE",University Hospital
-"Fri, Dec 7",09:00:00 AM,1,L81,Lecture: Immunity to Virus,Patricia Fitzgerald-Bocarsly
-"Fri, Dec 7",10:00:00 AM,1,L82,Lecture: Positive Strand RNA Virus I,Utz Herbig
-"Fri, Dec 7",11:00:00 AM,1,L83,Lecture: Positive Strand RNA Virus II,Utz Herbig
-"Fri, Dec 7",01:00:00 PM,5,,PCM1: Cancer Patient Interview (1/3 class),
-"Mon, Dec 10",09:00:00 AM,1,L84,"Lecture: Non-seg, neg strand RNA virus",Stephen Garrett
-"Mon, Dec 10",10:00:00 AM,1,L85,"Lecture: Segmented, Neg Strand Virus I",David Lukac
-"Mon, Dec 10",11:00:00 AM,1,L86,"Lecture: Segmented, Neg Strand Virus II",David Lukac
-"Mon, Dec 10",01:00:00 PM,5,,PCM1: Cancer Patient Interview (1/3 class),
-"Tue, Dec 11",09:00:00 AM,1,L87,Lecture: Parvo/Papova/Adenovirus,David Lukac
-"Tue, Dec 11",10:00:00 AM,1,L88,Lecture: Herpes and Pox Virus,David Lukac
-"Tue, Dec 11",11:00:00 AM,1,L89,Lecture: Retrovirus/HIV/ Secondary Infections,Ian Whitehead
-"Tue, Dec 11",01:00:00 PM,1,,PCM I Lecture: Law and Ethics,Pat Murphy
-"Tue, Dec 11",02:00:00 PM,2,,PCM I Small Group Session: Law and Ethics,Faculty
-"Wed, Dec 12",09:00:00 AM,1,L90,Lecture: Antivirals I,Joel Freundlich
-"Wed, Dec 12",10:00:00 AM,1,L91,Lecture: Antivirals II,Joel Freundlich
-"Wed, Dec 12",11:00:00 AM,1,L92,Lecture: Antiretroviral drugs,Joel Freundlich
-"Wed, Dec 12",12:00:00 PM,1,,Reserved,
-"Wed, Dec 12",01:00:00 PM,1,L93,Lecture: Basis HIV Diagnosis and Treatment,David Cennimo
-"Thu, Dec 13",09:00:00 AM,2,,POPS 5 HIV,Facilitators
-"Fri, Dec 14",09:00:00 AM,2,,Parasite/Virus Review,David Lukac
-"Mon, Dec 17",09:00:00 AM,3,,Exam 4: Parasite/Virus Exam,Faculty
-"Mon, Dec 17",11:00:00 AM,0.5,,Exam 4: Wall review,
-"Tue, Dec 18",08:00:00 AM,12,,PCM1: OSCE (1/3 class),
-"Wed, Dec 19",08:00:00 AM,12,,PCM1: OSCE (1/3 class),
-"Thu, Dec 20",08:00:00 AM,12,,PCM1: OSCE (1/3 class),
-"Fri, Dec 21",09:00:00 AM,3,,Shelf Exam,
-"Mon, Oct 8",12:00:00 PM,1.5,,Mandatory Student Affairs Lecture,
+2018,"Tue, Oct 9",08:30:00 AM,0.5,,Calm Mentor Course Introduction,
+2018,"Tue, Oct 9",09:00:00 AM,1,,Mandatory Module 2 Orientation,Stephen Garrett; Ian Whitehead
+2018,"Tue, Oct 9",10:00:00 AM,1,L1,Lecture: Hematopoiesis,Elaine Keohane
+2018,"Tue, Oct 9",11:00:00 AM,1,L2,Lecture: Functional Organization of the Immune System,Nick Ponzio
+2018,"Tue, Oct 9",01:00:00 PM,1,,HESJ1 Lecture: Adverse Childhood Experience,Beth Pletcher
+2018,"Tue, Oct 9",02:00:00 PM,2,,HESJ1 Small Group Session: Adverse Childhood Experience,Faculty
+2018,"Wed, Oct 10",09:00:00 AM,1,L3,Lecture: Antibodies and Antigens,Aimee Beaulieu
+2018,"Wed, Oct 10",10:00:00 AM,1,L4,Lecture: Innate Immunity I,Patricia Fitzgerald - Bocarsly
+2018,"Wed, Oct 10",11:00:00 AM,1,L5,Lecture: Innate Immunity II & Complement,Aimee Beaulieu; Christine Rohowsky-Kochan
+2018,"Wed, Oct 10",02:00:00 PM,4,,Global Health Event,Harshe Sule; Ziad Sifri
+2018,"Thu, Oct 11",09:00:00 AM,1,L6,Lecture: Acute Inflammation,Kenneth Klein
+2018,"Thu, Oct 11",10:00:00 AM,1,L7,Lecture: Chronic Inflammation,Kenneth Klein
+2018,"Thu, Oct 11",11:00:00 AM,1,L8,Lecture: Wound Healing,Kenneth Klein
+2018,"Thu, Oct 11",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
+2018,"Fri, Oct 12",09:00:00 AM,3,,TBL #1A - Lymphoid Tissue,DeFouw; Varricchio; Keohane
+2018,"Fri, Oct 12",01:00:00 PM,3,,TBL #1B - Lymphoid Tissue,DeFouw; Varricchio; Keohane
+2018,"Mon, Oct 15",09:00:00 AM,1,L9,Lecture: Major Histocompatibility Complex,Christine Rohowsky-Kochan
+2018,"Mon, Oct 15",10:00:00 AM,1,L10,Lecture: Antigen Processing and Presentation,Christine Rohowsky-Kochan
+2018,"Tue, Oct 16",09:00:00 AM,1,L11,Lecture: Generation of Diversity: Gene rearrangement in Ig & TCR,Joan Durbin
+2018,"Tue, Oct 16",10:00:00 AM,1,L12,Lecture: T Cell Maturation and Differentiation,Christine Rohowsky-Kochan
+2018,"Tue, Oct 16",11:00:00 AM,1,L13,Lecture: T Cell Activation,Christine Rohowsky-Kochan
+2018,"Tue, Oct 16",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
+2018,"Tue, Oct 16",,,,Online IPE Exercise,
+2018,"Wed, Oct 17",09:00:00 AM,1,L14,Lecture: Effector Mechanisms: Cell-Mediated Immunity,Nick Ponzio
+2018,"Wed, Oct 17",10:00:00 AM,1,L15,Lecture: Effector Mechanisms: Humoral Immunity,Joan Durbin
+2018,"Wed, Oct 17",11:00:00 AM,1,L16,Lecture: Hypersensitivities,Padmini Salgame
+2018,"Wed, Oct 17",12:00:00 PM,1,,Reserved,
+2018,"Wed, Oct 17",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
+2018,"Wed, Oct 17",,,,Online IPE exercise,
+2018,"Thu, Oct 18",09:00:00 AM,1,L17,Lecture: Diagnostic Tests,Amariliz Rivera - Medina (podcast)
+2018,"Thu, Oct 18",10:00:00 AM,1,L18,Lecture: Tolerance and Autoimmunity,Mark Siracusa
+2018,"Thu, Oct 18",11:00:00 AM,1,L19,Lecture: Transplantation Immunology,Joan Durbin
+2018,"Thu, Oct 18",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
+2018,"Thu, Oct 18",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
+2018,"Thu, Oct 18",,,,Online IPE Exercise,
+2018,"Fri, Oct 19",09:00:00 AM,2,,POPS1: Hypersensitivities,
+2018,"Fri, Oct 19",11:00:00 AM,1,L20,Lecture: Mucosal Immunity,Karen Edelblum
+2018,"Fri, Oct 19",01:00:00 PM,5,,PCM I: TOSCE (1/4 class),
+2018,"Mon, Oct 22",09:00:00 AM,1,L21,Lecture: Vaccines,Patricia Fitzgerald - Boserly
+2018,"Mon, Oct 22",10:00:00 AM,1,L22,Lecture: Immunodeficiency Diseases,Patricia Fitzgerald-Bocarsly
+2018,"Mon, Oct 22",11:00:00 AM,1,L23,Lecture: Tumor Immunology,Nick Ponzio
+2018,"Tue, Oct 23",09:00:00 AM,2,,POPS 2 Tetanus,Facilitators
+2018,"Tue, Oct 23",01:00:00 PM,1,,PCMI/HESJI Lecture: Caring for Patients with Limited Health Literacy,Michelle Dalla Piazza
+2018,"Tue, Oct 23",02:00:00 PM,2,,PCMI/HESJI Small Group Session : Caring for Patients with Limited Health Literacy,Patients
+2018,"Wed, Oct 24",Anytime,1,,Self Directed Learning,
+2018,"Thu, Oct 25",Anytime,1,,Self Directed Learning,
+2018,"Fri, Oct 26",09:00:00 AM,2,,Exam 1: Immunology,
+2018,"Fri, Oct 26",11:00:00 AM,0.5,,Exam 1: Wall Review,
+2018,"Mon, Oct 29",09:00:00 AM,1,L24,Lecture: Hematology CBC,Elaine Keohane
+2018,"Mon, Oct 29",10:00:00 AM,1,L25,Lecture: RBC Physiology and Hemodyanmics,Elaine Keohane
+2018,"Mon, Oct 29",11:00:00 AM,0.5,,Mandatory Patient Case Presentation: Sickle Cell,Frank Desposito
+2018,"Mon, Oct 29",12:00:00 PM,1,L26,Lecture: Red Blood Cell Disorders - Hemoglobinopathies,Frank Desposito
+2018,"Tue, Oct 30",09:00:00 AM,1,L27,Lecture: Anemia - Destruction/Production I,Elaine Keohane
+2018,"Tue, Oct 30",10:00:00 AM,1,L28,Lecture: Anemia Destruction/Production II,Elaine Keohane
+2018,"Tue, Oct 30",11:00:00 AM,1,L29,Lecture: Leukocytosis,David Cennimo
+2018,"Tue, Oct 30",01:00:00 PM,1,,PCM1 /HESJ1 Lecture : Medical Interpreter,Michelle Dalla Piazza
+2018,"Tue, Oct 30",02:00:00 PM,2,,PCM1 /HESJ1 Small Group Session: Medical Interpreter,Faculty
+2018,"Wed, Oct 31",09:00:00 AM,1,L30,Lecture: Platelet/megakaryocyte Disorders,Elaine Keohane
+2018,"Wed, Oct 31",10:00:00 AM,1,L31,Lecture: Hemostasis/Thrombosis/Embolism,Kenneth Klein
+2018,"Wed, Oct 31",11:00:00 AM,1,L32,Lecture: Drugs for management of thrombogenesis,Lester Sultatos
+2018,"Wed, Oct 31",12:00:00 PM,1,,Engage Mentor Meeting with Food,
+2018,"Thu, Nov 1",09:00:00 AM,2,,POPS 3 Anemia,Faculty
+2018,"Thu, Nov 1",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
+2018,"Fri, Nov 2",09:00:00 AM,1,L33,Lecture: Nature of Cancer I,Ian Whitehead
+2018,"Fri, Nov 2",10:00:00 AM,1,L34,Lecture: Nature of Cancer II,Ian Whitehead
+2018,"Fri, Nov 2",11:00:00 AM,1,L35,Lecture: Nature of Cancer III,Ian Whitehead
+2018,"Mon, Nov 5",09:00:00 AM,1,L36,Lecture: Clinical Manifestations of Cancer,David Cennimo
+2018,"Mon, Nov 5",10:00:00 AM,1,L37,Lecture: Hematologic Neoplastic Disorders - Lymphoma,Ian Whitehead
+2018,"Mon, Nov 5",11:00:00 AM,1,L38,Lecture: Hematologic Neoplastic Disorders - Lymphoma,Ian Whitehead
+2018,"Tue, Nov 6",09:00:00 AM,1,L39,Lecture: Hematologic Neooplastic Disorders - Leukemia,Pankoori Saraf
+2018,"Tue, Nov 6",10:00:00 AM,1,L40,"Lecture: Hematologic Neoplastics Disorders - Myelodysplasia, MPD, BMT Plasma",Pankoori Saraf
+2018,"Wed, Nov 7",09:00:00 AM,1,L41,"Lecture: Treatment of Cancer, Alkylating Agents",Virgil Muresan
+2018,"Wed, Nov 7",10:00:00 AM,1,L42,"Lecture: Treatment of Cancer, Alkylating agents",Virgil Muresan
+2018,"Wed, Nov 7",12:00:00 PM,1,,Reserved,
+2018,"Thu, Nov 8",09:00:00 AM,1,L43,Lecture: Targeted Therapy,Virgil Muresan
+2018,"Fri, Nov 9",01:30:00 PM,1,L44,Lecture: Approaches to Bleeding Review,Sangeeta Lamba
+2018,"Fri, Nov 9",03:00:00 PM,2,,Heme/Onc Review,Faculty
+2018,"Mon, Nov 12",09:00:00 AM,2,,Exam 2: Hem/Onc,
+2018,"Mon, Nov 12",11:00:00 AM,0.5,,Exam 2: Wall Review,
+2018,"Tue, Nov 13",09:00:00 AM,1,L45,Lecture: Intro to Pathogens and Bacterial Structures,Stephen Garrett
+2018,"Tue, Nov 13",10:00:00 AM,1,L46,Lecture: Bacterial Growth and Metabolism,Stephen Garrett
+2018,"Tue, Nov 13",11:00:00 AM,1,L47,Lecture: Immunity to Bacteria,Amariliz Rivera-Medina
+2018,"Tue, Nov 13",01:00:00 PM,1,,PCM1 Lecture : Domestic Violence,Ping-Hsin Chen
+2018,"Tue, Nov 13",02:00:00 PM,2,,PCM1 Small Group Session: Standardized Patient,Faculty
+2018,"Wed, Nov 14",09:00:00 AM,1,L48,"Lecture: Bacterial Replication, Recombination",M Zafri Humayun
+2018,"Wed, Nov 14",10:00:00 AM,1,L49,Lecture: Bacterial Gene Transfer and Expression,M Zafri Humayun
+2018,"Wed, Nov 14",11:00:00 AM,1,L50,Lecture: Antimicrobial targets and resistance I,Stephen Garrett
+2018,"Wed, Nov 14",12:00:00 PM,1,,Reserved,
+2018,"Thu, Nov 15",09:00:00 AM,1,L51,Lecture: Antimicrobial targets and resistance II,Stephen Garrett
+2018,"Thu, Nov 15",10:00:00 AM,1,L52,Lecture: Normal Flora,Stephen Garrett
+2018,"Thu, Nov 15",11:00:00 AM,1,L53,Lecture: Mechanisms of Pathogenesis,Stephen Garrett
+2018,"Thu, Nov 15",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience (30 students)",University Hospital
+2018,"Fri, Nov 16",09:00:00 AM,1,L54,Lecture: Toxins & Toxigenic Bacteria,Stephen Garrett
+2018,"Fri, Nov 16",10:00:00 AM,1,L55,Lecture: Gm+ Pyogenic - Staph,Stephen Garrett
+2018,"Fri, Nov 16",11:00:00 AM,1,L56,Lecture: Gm+ Pyogenic - Strep,Stephen Garrett
+2018,"Fri, Nov 16",01:30:00 PM,3,,CANCELED: OR Training,University Hospital
+2018,"Mon, Nov 19",09:00:00 AM,1,L57,Lecture: Bacteria of CNS,Stephen Garrett
+2018,"Mon, Nov 19",10:00:00 AM,2,L58,Lecture: Bacteria Respiratory,David Kaback
+2018,"Mon, Nov 19",11:00:00 AM,1,L59,Lecture: Mycobacteria and Actinomycetes,M Zafri Humayun
+2018,"Tue, Nov 20",09:00:00 AM,2,,POPS 4 Tuberculosis,Facilitators
+2018,"Tue, Nov 20",11:00:00 AM,1,L60,Lecture: Bacteria Urogenital I,Nikhat Parveen
+2018,"Tue, Nov 20",12:00:00 PM,1,L61,Lecture: Bacteria Urogenital II,Nikhat Parveen
+2018,"Tue, Nov 20",01:00:00 PM,1.5,,"PCM1 Lecture: Introduction to Clnical Ethical Principles, Humanism, and Professionalism",Pat Murphy; Chantal Brazeau
+2018,"Tue, Nov 20",02:30:00 PM,1.5,,"PCM1: Introduction to Clinical Ethical Principles, Humanism, and Professionalism Small Group Session",Faculty
+2018,"Wed, Nov 21",09:00:00 AM,1,L62,Lecture: Bacteria GI I,Matt Neiditch
+2018,"Wed, Nov 21",10:00:00 AM,1,L63,Lecture: Bacteria GI II,Matt Neiditch
+2018,"Wed, Nov 21",12:00:00 PM,1,,Reserved,
+2018,"Mon, Nov 26",09:00:00 AM,1,L64,Lecture: Zoonoses,David Kaback
+2018,"Mon, Nov 26",10:00:00 AM,1,L65,Lecture: Rickettsial Disease,David Kaback
+2018,"Mon, Nov 26",11:00:00 AM,1,L66,Lecture: Penicillins,Debkumar Pain
+2018,"Tue, Nov 27",09:00:00 AM,1,L67,Lecture: Sulfas/Quinilones/UTI Disinfectants,Virgil Muresan
+2018,"Tue, Nov 27",10:00:00 AM,1,L68,Lecture: Cephalosporins/Vancomycin/Streptogramins,Joel Freundlich
+2018,"Tue, Nov 27",11:00:00 AM,1.5,L69,Lecture: Macrolides/Clindamycin//Tetracycline/Chloramphenicol/Aminoglycosides,Joel Freundlich
+2018,"Tue, Nov 27",01:00:00 PM,1,,PCM1 Podcast: Capacity/Competence and Informed Consent,David Price
+2018,"Tue, Nov 27",02:00:00 PM,2,,PCM1 Small Group Session: Capacity/Competence and Informed Consent,Faculty
+2018,"Wed, Nov 28",09:00:00 AM,1,L70,Lecture: Anti-TB Drugs,Pradeep Kumar
+2018,"Wed, Nov 28",10:00:00 AM,2,,Bacteriology Review,Stephen Garrett
+2018,"Wed, Nov 28",12:00:00 PM,1,,Reserved,
+2018,"Wed, Nov 28",01:00:00 PM,5,,PCM1: Cancer Patient Interview (1/3 class),
+2018,"Thu, Nov 29",09:00:00 AM,1,L71,Lecture: Pathology of Bacterial Infectious Disease,Kenneth Klein
+2018,"Fri, Nov 30",09:00:00 AM,1,,Self Directed Learning,
+2018,"Mon, Dec 3",09:00:00 AM,2,,Exam 3: Bacterial,
+2018,"Mon, Dec 3",11:00:00 AM,0.5,,Exam 3: Wall Review,
+2018,"Tue, Dec 4",09:00:00 AM,1,L72,Lecture: Fungi and Fungal Diseases I,David Kaback
+2018,"Tue, Dec 4",10:00:00 AM,1,L73,Lecture: Fungi and Fungal Diseases II,David Kaback
+2018,"Tue, Dec 4",11:00:00 AM,1,L74,Lecture: Antifungals,Virgil Muresan
+2018,"Tue, Dec 4",01:00:00 PM,1,,PCM1 Lecture: Delivering Bad News,Pat Murphy
+2018,"Tue, Dec 4",02:00:00 PM,2,,PCM1 Small Group Session: Delivering Bad News,Faculty
+2018,"Wed, Dec 5",09:00:00 AM,1,L75,Lecture: Parasites and Disease I,Vivian Bellofatto
+2018,"Wed, Dec 5",10:00:00 AM,1,L76,Lecture: Parasites and Disease II,Vivian Bellofatto
+2018,"Wed, Dec 5",11:00:00 AM,1,L77,Lecture: Parasites and Disease III and Immunity,Vivian Bellofatto
+2018,"Wed, Dec 5",12:00:00 PM,1,,Reserved,
+2018,"Thu, Dec 6",09:00:00 AM,1,L78,Lecture: Antiprotozoal/antihelminthic Drugs,Debkumar Pain
+2018,"Thu, Dec 6",10:00:00 AM,1,L79,Lecture: Introduction to Animal Virology I,Ian Whitehead
+2018,"Thu, Dec 6",11:00:00 AM,1,L80,Lecture: Introduction to Animal Virology II,Ian Whitehead
+2018,"Thu, Dec 6",01:30:00 PM,3,,"PCM I Transitions of Care, Interdisciplinary Rounds Experience MAKE UP DATE",University Hospital
+2018,"Fri, Dec 7",09:00:00 AM,1,L81,Lecture: Immunity to Virus,Patricia Fitzgerald-Bocarsly
+2018,"Fri, Dec 7",10:00:00 AM,1,L82,Lecture: Positive Strand RNA Virus I,Utz Herbig
+2018,"Fri, Dec 7",11:00:00 AM,1,L83,Lecture: Positive Strand RNA Virus II,Utz Herbig
+2018,"Fri, Dec 7",01:00:00 PM,5,,PCM1: Cancer Patient Interview (1/3 class),
+2018,"Mon, Dec 10",09:00:00 AM,1,L84,"Lecture: Non-seg, neg strand RNA virus",Stephen Garrett
+2018,"Mon, Dec 10",10:00:00 AM,1,L85,"Lecture: Segmented, Neg Strand Virus I",David Lukac
+2018,"Mon, Dec 10",11:00:00 AM,1,L86,"Lecture: Segmented, Neg Strand Virus II",David Lukac
+2018,"Mon, Dec 10",01:00:00 PM,5,,PCM1: Cancer Patient Interview (1/3 class),
+2018,"Tue, Dec 11",09:00:00 AM,1,L87,Lecture: Parvo/Papova/Adenovirus,David Lukac
+2018,"Tue, Dec 11",10:00:00 AM,1,L88,Lecture: Herpes and Pox Virus,David Lukac
+2018,"Tue, Dec 11",11:00:00 AM,1,L89,Lecture: Retrovirus/HIV/ Secondary Infections,Ian Whitehead
+2018,"Tue, Dec 11",01:00:00 PM,1,,PCM I Lecture: Law and Ethics,Pat Murphy
+2018,"Tue, Dec 11",02:00:00 PM,2,,PCM I Small Group Session: Law and Ethics,Faculty
+2018,"Wed, Dec 12",09:00:00 AM,1,L90,Lecture: Antivirals I,Joel Freundlich
+2018,"Wed, Dec 12",10:00:00 AM,1,L91,Lecture: Antivirals II,Joel Freundlich
+2018,"Wed, Dec 12",11:00:00 AM,1,L92,Lecture: Antiretroviral drugs,Joel Freundlich
+2018,"Wed, Dec 12",12:00:00 PM,1,,Reserved,
+2018,"Wed, Dec 12",01:00:00 PM,1,L93,Lecture: Basis HIV Diagnosis and Treatment,David Cennimo
+2018,"Thu, Dec 13",09:00:00 AM,2,,POPS 5 HIV,Facilitators
+2018,"Fri, Dec 14",09:00:00 AM,2,,Parasite/Virus Review,David Lukac
+2018,"Mon, Dec 17",09:00:00 AM,3,,Exam 4: Parasite/Virus Exam,Faculty
+2018,"Mon, Dec 17",11:00:00 AM,0.5,,Exam 4: Wall review,
+2018,"Tue, Dec 18",08:00:00 AM,12,,PCM1: OSCE (1/3 class),
+2018,"Wed, Dec 19",08:00:00 AM,12,,PCM1: OSCE (1/3 class),
+2018,"Thu, Dec 20",08:00:00 AM,12,,PCM1: OSCE (1/3 class),
+2018,"Fri, Dec 21",09:00:00 AM,3,,Shelf Exam,
+2018,"Mon, Oct 8",12:00:00 PM,1.5,,Mandatory Student Affairs Lecture,
+2019,"Wed, Jan 2",09:00:00 AM,0.5,,Mandatory: Introduction to MIS,
+2019,"Wed, Jan 2",09:30:00 AM,3,,TBL 4 and Lab: Group A,
+2019,"Wed, Jan 2",12:30:00 PM,0.5,,Mandatory: Calm mentor introduction,
+2019,"Wed, Jan 2",01:00:00 PM,3,,TBL 4 and lab: Group B,
+2019,"Thurs, Jan 3",09:00:00 AM,2,,Lectures,
+2019,"Fri, Jan 4",09:00:00 AM,3,,TBL 5 and lab: Group B,
+2019,"Fri, Jan 4",01:00:00 PM,3,,TBL 5 and lab: Group A,
+2019,"Mon, Jan 7",09:00:00 AM,3,,"TBL 6, QUIZ, and Lab: Group A",
+2019,"Mon, Jan 7",01:00:00 PM,3,,"TBL 6, QUIZ, and Lab: Group B",
+2019,"Tues, Jan 8",09:00:00 AM,1,,Lecture,
+2019,"Tues, Jan 8",02:00:00 PM,3,,PCM small groups (half class),
+2019,"Wed, Jan 9",09:00:00 AM,3,,TBL 7 and lab: Group B,
+2019,"Wed, Jan 9",01:00:00 PM,3,,TBL 7 and lab: Group A,
+2019,"Thurs, Jan 10",09:00:00 AM,2,,Lecture,
+2019,"Thurs, Jan 10",02:00:00 PM,3,,PCM small groups (half class),
+2019,"Fri, Jan 11",09:00:00 AM,3,,"TBL 8, and Lab: Group A",
+2019,"Fri, Jan 11",01:00:00 PM,3,,"TBL 8, and Lab: Group B",
+2019,"Mon, Jan 14",09:00:00 AM,3,,"TBL 9, QUIZ, and Lab: Group B",
+2019,"Mon, Jan 14",01:00:00 PM,3,,"TBL 9, QUIZ, and Lab: Group A",
+2019,"Tues, Jan 15",09:00:00 AM,2,,Lecture,
+2019,"Mon, Jan 14",11:00:00 AM,1,,MANDATORY PCM Lecture,
+2019,"Wed, Jan 16",09:00:00 AM,1,,ARS Review: Skin,
+2019,"Wed, Jan 16",10:00:00 AM,1,,Anatomy Q&A/Review,
+2019,"Fri, Jan 18",09:00:00 AM,6,,Anatomy Practical,
+2019,"Tues, Jan 22",09:00:00 AM,2,,Unit 1 Exam,
+2019,"Tues, Jan 22",11:30:00 AM,0.5,,Wall Review,
+2019,"Tues, Jan 22",01:00:00 PM,3,,PCM small groups (1/3 class),
+2019,"Tues, Jan 22",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Wed, Jan 23",09:00:00 AM,3,,Lecture,
+2019,"Wed, Jan 23",01:00:00 PM,3,,PCM small groups (1/3 class),
+2019,"Wed, Jan 23",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Thurs, Jan 24",09:00:00 AM,3,,Lecture,
+2019,"Thurs, Jan 24",01:00:00 PM,3,,PCM small groups (1/3 class),
+2019,"Thurs, Jan 24",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Fri, Jan 25",09:00:00 AM,2,,Lecture,
+2019,"Fri, Jan 25",11:00:00 AM,1,,MANDATORY PCM Lecture,
+2019,"Fri, Jan 25",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Mon, Jan 28",09:00:00 AM,3,,Lecture,
+2019,"Mon, Jan 28",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Tues, Jan 29",09:00:00 AM,3,,Lecture,
+2019,"Tues, Jan 29",01:00:00 PM,3,,PCM small groups (1/3 class),
+2019,"Tues, Jan 29",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Wed, Jan 30",09:00:00 AM,4,,Lecture,
+2019,"Wed, Jan 30",01:00:00 PM,3,,PCM small groups (1/3 class),
+2019,"Wed, Jan 30",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Thurs, Jan 31",09:00:00 AM,3,,Lecture,
+2019,"Thurs, Jan 31",01:00:00 PM,3,,PCM small groups (1/3 class),
+2019,"Thurs, Jan 31",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Fri, Feb 1",09:00:00 AM,1.5,,Lecture,
+2019,"Fri, Feb 1",10:30:00 AM,1.5,,Simulation: Toxicology Clinical Cases,
+2019,"Fri, Feb 1",02:00:00 PM,3,,PCM Community preceptorship (1/5 class),
+2019,"Mon, Feb 4",09:00:00 AM,3,,MANDATORY HESJ: Patient with Disables,
+2019,"Mon, Feb 4",01:00:00 PM,3,,PCM: Written and Oral Presentations,
+2019,"Tues, Feb 5",09:00:00 AM,1,,ARS Review: Musculoskeletal and Connective tissue,
+2019,"Tues, Feb 5",01:00:00 PM,3,,PCM: Written and Oral Presentations,
+2019,"Fri, Feb 8",09:00:00 AM,2,,Unit 2 Exam,
+2019,"Fri, Feb 8",11:30:00 AM,0.5,,Wall Review,

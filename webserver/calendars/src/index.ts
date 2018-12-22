@@ -39,11 +39,11 @@ function generateCalendar(fileName: string) {
             }
 
             return {
-                date: parts[0] + ' 2018', //WARNING: VERY MUCH NOT GENERAL
-                time: parts[1],
-                length: parts[2],
-                lecture: parts[3],
-                name: parts[4],
+                date: parts[1] + ' ' + parts[0],
+                time: parts[2] || '',
+                length: parts[3] || '',
+                lecture: parts[4] || '',
+                name: parts[5],
                 lecturer: temp
             };
         });
@@ -62,7 +62,7 @@ function generateCalendar(fileName: string) {
             throw new Error(`Attempted to build invalid date! Date(${event.date}) and Time(${event.time})`);
         }
 
-
+        
         //touching up name of events
         let name = event.name.replace(/mandatory/ig, 'MANDATORY').trim();//capitalize all instances of MANDATORY
         name = event.lecture ?//if the event has a lecture label
