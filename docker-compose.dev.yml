@@ -3,6 +3,7 @@ services:
   api:
     build: ./api
     environment:
+      SIMULATE_SENSORS: please do
       PGHOST: db
       PGUSER: postgres
       PGPASSWORD: postgres
