@@ -32,10 +32,10 @@ const hiid = fs.readFileSync('./HIID.csv')
 
         return {
             date: parts[1] + ' ' + parts[0],
-            time: parts[2],
-            length: parts[3],
-            lecture: parts[4],
-            name: parts[5],
+            time: parts[2] || '',
+            length: parts[3] || '',
+            lecture: parts[4] || '',
+            name: parts[5] || '',
             lecturer: temp
         };
     });
