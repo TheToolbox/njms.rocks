@@ -1,0 +1,56 @@
+version: '3'
+services:
+  api:
+    build: ./api
+    environment:
+      SIMULATE_SENSORS: please do
+      PGHOST: db
+      PGUSER: postgres
+      PGPASSWORD: postgres
+  db:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /db
+    volumes:
+      - "/db:/db" #share /db with host
+  webserver:
+    build: ./webserver
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - acme-challenge:/usr/local/apache2/htdocs/.well-known/acme-challenge
+      - /certificates:/usr/local/apache2/conf
+volumes:
+  acme-challenges: {}
+  #mongo:
+   # image: mongo
+    #volumes: 
+    #  - ./data/runtime/db:/data/db
+    #  - ./data/dump:/dump
+    #command: mongod --smallfiles
+  #chat:
+   # image: rocketchat/rocket.chat:latest
+   # environment:
+   #   - MONGO_URL=mongodb://mongo:27017/rocketchat
+   #   - ROOT_URL=https://localhost/chat
+   #   - Accounts_UseDNSDomainCheck=True
+  #  depends_on:
+  #    - mongo
+  #hubot:
+  #  image: rocketchat/hubot-rocketchat:latest
+  #  environment:
+  #    - ROCKETCHAT_URL=rocketchat:3000
+  #    - ROCKETCHAT_ROOM=GENERAL
+  #    - ROCKETCHAT_USER=Botname
+  #    - ROCKETCHAT_PASSWORD=BotPassw0rd
+  #    - BOT_NAME=Botname
+  #    - EXTERNAL_SCRIPTS=hubot-help,hubot-seen,hubot-links,hubot-greetings
+    # this is used to expose the hubot port for notifications on the host on port 3001, e.g. for hubot-jenkins-notifier
+  #  ports:
+  #    - 3001:8080
+
+    

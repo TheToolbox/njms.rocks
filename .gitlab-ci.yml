@@ -1,0 +1,29 @@
+#This file tells Gitlab CI how to build our project, test it, and then deploy it!
+
+stages: #these are the three stages of our build. It's about as basic as it sounds
+  - build
+  - test
+  - deploy
+
+job 1:
+  stage: build
+  tags: #only run this job on a Gitlab Runner tagged as 'server'
+    - server
+  script: #try building each of the docker images before we go any further
+    - docker info
+    - for D in */; do docker build "${D}"; done
+
+job 2:
+  stage: test
+  tags: #only run this job on a Gitlab Runner tagged as 'server'
+    - server
+  script: echo "No tests yet :'(" #no tests yet :'(
+
+job 3:
+  stage: deploy
+  tags: #only run this job on a Gitlab Runner tagged as 'server'
+    - server
+  only:
+    - master #only do this when we push changes to the master branch
+  script: #rebuild the docker containers and start each of them up with the options specified in docker-compose.yml and docker-compose.prod.yml
+    - docker-compose up -f docker-compose.yml -f docker-compose.prod.yml --build -d
