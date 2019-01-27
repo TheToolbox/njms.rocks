@@ -25,7 +25,7 @@ services:
       - acme-challenge:/usr/local/apache2/htdocs/.well-known/acme-challenge
       - /certificates:/usr/local/apache2/conf
 volumes:
-  acme-challenges: {}
+  acme-challenge: {}
   #mongo:
    # image: mongo
     #volumes: 

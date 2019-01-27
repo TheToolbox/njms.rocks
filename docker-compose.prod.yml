@@ -2,10 +2,12 @@ version: '3'
 services:
   api:
     environment:
-      - SIMULATE_SENSORS: ""
+      - SIMULATE_SENSORS=
   certbot:
     build: ./certbot
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /certificates:/certificates
       - acme-challenge:/webroot/.well-known/acme-challenge
+volumes:
+  acme-challenge: {}
