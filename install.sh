@@ -32,9 +32,19 @@ sudo apt-get install -y gitlab-runner
 echo "------------------------"
 echo "About to register the Gitlab Runner"
 echo "This software allows Gitlab to directly push code changes and do build/test/deploy on the server, controlled by .gitlab-ci.yml."
-echo "The registration information will ask for some info, https://docs.gitlab.com/runner/register/index.html will provide some help if you need it."
+echo "The registration information will ask for a 'registration token', found here, under 'runners':"
+echo "https://gitlab.com/njms-tech-in-med/njms-rocks/settings/ci_cd"
 echo "------------------------"
-sudo gitlab-runner register
+read -p "token: " GITLAB_RUNNER_TOKEN
+sudo gitlab-runner register \
+  --non-interactive \
+  --url "https://gitlab.com/" \
+  --registration-token $GITLAB_RUNNER_TOKEN \
+  --executor "shell" \
+  --description "njms.rocks server" \
+  --tag-list "server" \
+  --run-untagged \
+  --locked="false" \
 
 # open ports
 echo "Opening ports"

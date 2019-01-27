@@ -1,4 +1,4 @@
-FROM ubuntu:18
+FROM ubuntu:18.04
 # install certbot, cron
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
