@@ -26,4 +26,4 @@ job 3:
   only:
     - master #only do this when we push changes to the master branch
   script: #rebuild the docker containers and start each of them up with the options specified in docker-compose.yml and docker-compose.prod.yml
-    - docker-compose up -f docker-compose.yml -f docker-compose.prod.yml --build -d
+    - docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build -d
