@@ -3,6 +3,7 @@ services:
   api:
     build: ./api
     environment:
+      SIMULATE_SENSORS: please do
       PGHOST: db
       PGUSER: postgres
       PGPASSWORD: postgres
@@ -20,9 +21,14 @@ services:
     ports:
       - 80:80
       - 443:443
+    volumes:
+      - acme-challenge:/usr/local/apache2/htdocs/.well-known/acme-challenge
+      - /certificates:/usr/local/apache2/conf
+volumes:
+  acme-challenges: {}
   #mongo:
    # image: mongo
-    #volumes:
+    #volumes: 
     #  - ./data/runtime/db:/data/db
     #  - ./data/dump:/dump
     #command: mongod --smallfiles

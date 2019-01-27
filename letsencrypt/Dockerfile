@@ -1,0 +1,21 @@
+FROM ubuntu:18
+# install certbot, cron
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository universe && add-apt-repository ppa:certbot/certbot && \
+    apt-get update && \
+    apt-get install -y certbot cron \
+    && rm -rf /var/lib/apt/lists/*
+RUN echo "08 2 * * * certbot renew" | crontab - \
+    && mkdir -p /webroot/.well-known/acme-challenge
+
+#start cron, get certificate if we don't have one, and start the server
+CMD sudo certbot certonly --webr1oot \
+        --non-interactive \
+        -w /webroot \
+        -d $DOMAIN \
+        --email $EMAIL \
+        --agree-tos \
+        --cert-path /certificates \
+        --cert-name server \
+    && crond -f

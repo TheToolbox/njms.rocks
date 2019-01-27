@@ -1,0 +1,9 @@
+  api:
+    environment:
+      - SIMULATE_SENSORS: ""
+  letsencrypt:
+    build: ./letsencrypt
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /certificates:/certificates
+      - acme-challenge:/webroot/.well-known/acme-challenge
