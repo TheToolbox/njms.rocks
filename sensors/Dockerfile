@@ -9,7 +9,7 @@ RUN curl -sL https://particle.io/install-cli > ./install && \
 RUN apt-get remove -y python curl && \
     apt-get clean -y && \
     apt-get autoremove -y
-ADD temperature-probe/* .
+ADD temperature-probes/* .
 CMD particle login && \
     particle compile photon --target=0.8.0-rc.11 temperature-probe && \
     particle flash all-stuff with-the-result
