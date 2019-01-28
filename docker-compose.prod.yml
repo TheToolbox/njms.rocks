@@ -5,6 +5,8 @@ services:
       - SIMULATE_SENSORS=
   certbot:
     build: ./certbot
+    environment:
+      - DOMAIN: njms.rocks
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /certificates:/certificates
