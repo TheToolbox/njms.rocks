@@ -10,7 +10,7 @@ RUN echo "08 2 * * * certbot renew" | crontab - \
     && mkdir -p /webroot/.well-known/acme-challenge
 
 #start cron, get certificate if we don't have one, and start the server
-CMD sudo certbot certonly --webroot \
+CMD certbot certonly --webroot \
         --non-interactive \
         -w /webroot \
         -d $DOMAIN \
