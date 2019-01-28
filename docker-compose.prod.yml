@@ -7,6 +7,7 @@ services:
     build: ./certbot
     environment:
       - DOMAIN=njms.rocks
+      - EMAIL=tech-in-med@njms.rutgers.edu
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /certificates:/certificates
