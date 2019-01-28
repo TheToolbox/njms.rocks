@@ -17,15 +17,13 @@ services:
     volumes:
       - "/db:/db" #share /db with host
   webserver:
+    restart: always
+    restart_policy:
+      delay: 3s
     build: ./webserver
     ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - acme-challenge:/usr/local/apache2/htdocs/.well-known/acme-challenge
-      - /certificates:/usr/local/apache2/conf
-volumes:
-  acme-challenge: {}
+      - 8080:80
+      - 8443:443
   #mongo:
    # image: mongo
     #volumes: 

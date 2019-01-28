@@ -9,5 +9,14 @@ services:
       - /etc/letsencrypt:/etc/letsencrypt
       - /certificates:/certificates
       - acme-challenge:/webroot/.well-known/acme-challenge
+  webserver:
+    depends_on:
+      - certbot
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - acme-challenge:/usr/local/apache2/htdocs/.well-known/acme-challenge
+      - /certificates:/usr/local/apache2/conf/certs
 volumes:
   acme-challenge: {}
