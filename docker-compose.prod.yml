@@ -6,7 +6,7 @@ services:
   certbot:
     build: ./certbot
     environment:
-      - DOMAIN: njms.rocks
+      - DOMAIN=njms.rocks
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - /certificates:/certificates
