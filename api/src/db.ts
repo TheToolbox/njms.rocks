@@ -7,7 +7,7 @@ const schema = [
     `CREATE TABLE IF NOT EXISTS temperatures (
         timestamp bigint,
         temperature numeric,
-        PRIMARY KEY(temperature)
+        PRIMARY KEY(timestamp)
     );`];
 
 export async function addTemp(temperature: number) {
