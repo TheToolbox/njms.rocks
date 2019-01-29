@@ -44,7 +44,7 @@ sudo gitlab-runner register \
   --description "njms.rocks server" \
   --tag-list "server" \
   --run-untagged \
-  --locked="false" \
+  --locked="false" 
 
 # open ports
 echo "Opening ports"

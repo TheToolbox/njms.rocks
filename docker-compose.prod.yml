@@ -3,23 +3,16 @@ services:
   api:
     environment:
       - SIMULATE_SENSORS=
-  certbot:
-    build: ./certbot
-    environment:
-      - DOMAIN=njms.rocks
-      - EMAIL=tech-in-med@njms.rutgers.edu
-    volumes:
-      - /etc/letsencrypt:/etc/letsencrypt
-      - /certificates:/certificates
-      - acme-challenge:/webroot/.well-known/acme-challenge
   webserver:
     depends_on:
       - certbot
     ports:
       - 80:80
       - 443:443
+    environment:
+      - DOMAIN=njms.rocks
+      - EMAIL=tech-in-med@njms.rutgers.edu
     volumes:
-      - acme-challenge:/usr/local/apache2/htdocs/.well-known/acme-challenge
-      - /certificates:/usr/local/apache2/conf/certs
+      - /etc/letsencrypt:/etc/letsencrypt
 volumes:
   acme-challenge: {}
