@@ -24,6 +24,6 @@ CMD certbot certonly --apache \
         --email $EMAIL \
         --agree-tos \
         --cert-name server; \
-    cp -f /etc/letsencrypt/live/server/* /usr/local/apache2/conf/cert/; \
+    cp -f /etc/letsencrypt/live/server/* /usr/local/apache2/conf/certs/; \
     cron \
     && httpd-foreground
