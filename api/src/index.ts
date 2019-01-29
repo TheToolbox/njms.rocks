@@ -23,7 +23,7 @@ import * as db from './db';
             req.end(JSON.stringify({
                 temperature: sim_temp += Math.random() - 0.5
             }));
-        }, 1000);
+        }, 3000);
     }
 })();
 
