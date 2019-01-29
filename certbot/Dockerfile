@@ -24,4 +24,4 @@ CMD if [ ! -f "/certificates/server.key" ]; then \
         --agree-tos \
         --cert-path /certificates \
         --cert-name server \
-    && crond -f
+    && cron -f
