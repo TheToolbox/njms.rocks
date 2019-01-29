@@ -23,7 +23,7 @@ CMD certbot certonly --apache \
         --domain $DOMAIN \
         --email $EMAIL \
         --agree-tos \
-        --cert-name server \
-        --post-hook "cp -f /etc/letsencrypt/live/server/* /usr/local/apache2/conf/certs/"; \
+        --cert-name server; \
+    cp -f /etc/letsencrypt/live/server/* /usr/local/apache2/conf/cert/; \
     cron \
     && httpd-foreground
