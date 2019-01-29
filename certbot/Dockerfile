@@ -13,7 +13,7 @@ RUN echo "08 2 * * * certbot renew" | crontab - \
 CMD if [ ! -f "/certificates/server.key" ]; then \
         openssl req -x509 -new -newkey rsa:4096 -nodes -keyout /certificates/server.key -out certificates/server.crt \
             -days 365 -subj '/CN=njms.rocks'; \
-        cp /certificates/server.crt /certificates/server-ca.crt
+        cp /certificates/server.crt /certificates/server-ca.crt \
     fi \
     && certbot certonly --webroot \
         --non-interactive \
