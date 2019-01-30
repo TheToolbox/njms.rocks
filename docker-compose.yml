@@ -22,6 +22,12 @@ services:
     ports:
       - 8080:80
       - 8443:443
+  3dprinting-ssh-proxy:
+    build: ./3dprinting
+    volumes: 
+      - /opt/njms.rocks/3dprinting_host_keys:/etc/ssh/host_keys
+    ports:
+      - "2222:22"
   #mongo:
    # image: mongo
     #volumes: 

@@ -52,6 +52,7 @@ sudo apt-get install -y ufw
 sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw allow https
+sudo ufw allow 2222
 yes | sudo ufw enable
 
 mkdir -p /db
