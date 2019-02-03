@@ -3,7 +3,7 @@ set -eux
 
 # install docker
 echo "Installing docker"
-sudo apt-get remove docker docker-engine docker.io
+sudo apt-get remove docker docker-engine docker.io || echo "docker wasn't previously installed"
 sudo apt-get update
 sudo apt-get install -y \
     apt-transport-https \
