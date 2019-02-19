@@ -234,86 +234,118 @@
 2019,"Tue, Feb 5",11:00:00 AM,1,,ARS Review: Musculoskeletal and Connective Tissue Review,Valerie Fitzhugh
 2019,"Tue, Feb 5",01:00:00 PM,3,,PCMI: Written and Oral Presentations,Learning Community Faculty
 2019,"Fri, Feb 8",09:00:00 AM,3,,Assessment: MIS Unit 2 Exam,
-2019,"Mon, Feb 11",08:00:00 AM,1,,*Mandatory Intro Lecture,
-2019,"Mon, Feb 11",09:00:00 AM,3,,*TBL 10 Group A,
-2019,"Mon, Feb 11",12:00:00 PM,1,,*Mandatory CIM cardio panel,
-2019,"Mon, Feb 11",01:00:00 PM,3,,*TBL 10 Group B,
-2019,"Mon, Feb 11",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Tue, Feb 12",09:00:00 AM,3,,*Lectures,
-2019,"Tue, Feb 12",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Wed, Feb 13",09:00:00 AM,3,,*TBL 11 Group B,
-2019,"Wed, Feb 13",12:00:00 PM,1,,*Mandatory Patient Panel,
-2019,"Wed, Feb 13",01:00:00 PM,3,,*TBL 11 Group A,
-2019,"Wed, Feb 13",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Thu, Feb 14",09:00:00 AM,3,,*Lecture,
-2019,"Thu, Feb 14",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Fri, Feb 15",09:00:00 AM,2.5,,*TBL 12 Group A + Quiz,
-2019,"Fri, Feb 15",11:30:00 AM,0.5,,*Group A,
-2019,"Fri, Feb 15",01:00:00 PM,2.5,,*TBL 12 Group B + Quiz,
-2019,"Fri, Feb 15",03:30:00 PM,0.5,,*Group B,
-2019,"Fri, Feb 15",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Mon, Feb 18",09:00:00 AM,1,,*Flipped Session 1,
-2019,"Mon, Feb 18",10:00:00 AM,2,,*Lecture,
-2019,"Mon, Feb 18",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Tue, Feb 19",09:00:00 AM,3,,*Lecture,
-2019,"Tue, Feb 19",01:00:00 PM,3,,*PCM Small Group Session (1/3 class),
-2019,"Tue, Feb 19",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Wed, Feb 20",09:00:00 AM,3,,*Lecture,
-2019,"Wed, Feb 20",12:00:00 PM,1,,*Reserved,
-2019,"Wed, Feb 20",01:00:00 PM,3,,*PCM Small Group Session (1/3 class),
-2019,"Wed, Feb 20",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Thu, Feb 21",09:00:00 AM,3,,*Lecture,
-2019,"Thu, Feb 21",01:00:00 PM,3,,*PCM Small Group Session (1/3 class),
-2019,"Thu, Feb 21",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Fri, Feb 22",09:00:00 AM,2,,*Mandatory Clinical Integration PBL,
-2019,"Fri, Feb 22",11:00:00 AM,1,,*Lecture,
-2019,"Fri, Feb 22",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Mon, Feb 25",09:00:00 AM,2,,*Clinical Integration PBL Review,
-2019,"Mon, Feb 25",11:00:00 AM,1,,*Anatomy ARS Q&A,
-2019,"Mon, Feb 25",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Tue, Feb 26",09:00:00 AM,2,,*EXAM 1,
-2019,"Tue, Feb 26",11:30:00 AM,0.5,,*Exam Review,
-2019,"Tue, Feb 26",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Wed, Feb 27",09:00:00 AM,3,,*Lecture,
-2019,"Wed, Feb 27",12:00:00 PM,1,,*Reserved,
-2019,"Wed, Feb 27",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Thu, Feb 28",09:00:00 AM,3,,*Lecture,
-2019,"Thu, Feb 28",01:00:00 PM,3,,*PCM Small Group Session (1/2 class),
-2019,"Thu, Feb 28",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Fri, Mar 01",09:00:00 AM,3,,*Lecture,
-2019,"Fri, Mar 01",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Mon, Mar 04",09:00:00 AM,2,,*Flipped Session 2,
-2019,"Mon, Mar 04",10:00:00 AM,1,,*Lecture,
-2019,"Mon, Mar 04",01:00:00 PM,3,,*PCM Small Group Session (1/2 class),
-2019,"Mon, Mar 04",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Tue, Mar 05",09:00:00 AM,3,,*Lecture,
-2019,"Tue, Mar 05",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Wed, Mar 06",09:00:00 AM,1,,*Mandatory Clinical Integration PBL,
-2019,"Wed, Mar 06",10:00:00 AM,2,,*Lecture,
-2019,"Wed, Mar 06",12:00:00 PM,1,,*Reserved,
-2019,"Wed, Mar 06",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Thu, Mar 07",09:00:00 AM,3,,*Lecture,
-2019,"Thu, Mar 07",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Fri, Mar 08",09:00:00 AM,1,,*Lecture,
-2019,"Fri, Mar 08",10:00:00 AM,1,,*Clinical Integration PBL Review,
-2019,"Fri, Mar 08",11:00:00 AM,1,,*Lecture,
-2019,"Fri, Mar 08",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Mon, Mar 11",09:00:00 AM,3,,*Mandatory: Path Lab,
-2019,"Mon, Mar 11",01:00:00 PM,3,,*PCM Small Group Session (1/3 class),
-2019,"Mon, Mar 11",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Tue, Mar 12",09:00:00 AM,3,,*Lecture,
-2019,"Tue, Mar 12",01:00:00 PM,3,,*PCM Small Group Session (1/3 class),
-2019,"Tue, Mar 12",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Wed, Mar 13",09:00:00 AM,2,,*"ARS Review, Q&A",
-2019,"Wed, Mar 13",12:00:00 PM,1,,*Reserved,
-2019,"Wed, Mar 13",01:00:00 PM,3,,*PCM Small Group Session (1 / 3 class),
-2019,"Wed, Mar 13",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Thu, Mar 14",09:00:00 AM,2,,*Lecture,
-2019,"Thu, Mar 14",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Fri, Mar 15",02:00:00 PM,3,,*Preceptorship (1/5 class),
-2019,"Mon, Mar 18",09:00:00 AM,2,,*EXAM 2,
-2019,"Mon, Mar 18",11:30:00 AM,0.5,,*Exam Review,
-2019,"Mon, Mar 18",01:00:00 PM,3,,*PCM Written and Oral Small Group Sessions (1/2 Class),
-2019,"Tue, Mar 19",09:00:00 AM,1,,*Mandatory: Clinical Integration Session,
-2019,"Tue, Mar 19",01:00:00 PM,3,,*PCM Written and Oral Small Group Sessions (1/2 Class),
-2019,"Fri, Mar 22",09:00:00 AM,3,,*Integrated Cardio Shelf,
+2019,"Mon, Feb 11",8:00 AM,1,,MANDATORY Lecture: Introduction to the Cardiovascular Block: Content Overview,Gerula; Suzuki; Cespedes; Moharita
+2019,"Mon, Feb 11",9:00 AM,3,,"TBL 10 Group A: Mediastinum, Pericardium, and Heart",DeFouw; Varricchio
+2019,"Mon, Feb 11",1:00 PM,3,,"TBL 10 Group B: Mediastinum, Pericardium, and Heart",DeFouw; Varricchio
+2019,"Mon, Feb 11",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Mon, Feb 11",,1,,Supplementary Review Podcast: Cardiac and Smooth Muscle,
+2019,"Tue, Feb 12",10:00 AM,1,L1,Lecture: Congenital Heart Disease,Heller
+2019,"Tue, Feb 12",11:00 AM,1.5,L2,Lecture: Congenital Heart Disease Clinical,Gerula
+2019,"Tue, Feb 12",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Tue, Feb 12",,1,,Supplementary Podcast: Cardiac Embryology,
+2019,"Tue, Feb 12",,1,,Supplementary Review Foundations Podcast: Embrology and Histology (EAC),
+2019,"Wed, Feb 13",9:00 AM,3,,TBL 11 Group B: Heart and Great Vessels,DeFouw; Varricchio
+2019,"Wed, Feb 13",12:00 PM,1,,MANDATORY: Cardiac Patient Panel,
+2019,"Wed, Feb 13",1:00 PM,3,,TBL 11 Group A: Heart and Great Vessels,DeFouw; Varricchio
+2019,"Wed, Feb 13",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Wed, Feb 13",,1,L3,Podcast for Flipped Session #1: Lecture 3 (L3): Hemodynamics & Control of Blood Flow,Shirakova
+2019,"Thu, Feb 14",9:00 AM,1,L4,Lecture: Control of blood pressure & Microcirculation,Shirakova
+2019,"Thu, Feb 14",10:00 AM,1,L5,Lecture: Anatomy and Coronary Imaging (echo & cath & vascular),Waller
+2019,"Thu, Feb 14",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Fri, Feb 15",9:00 AM,2.5,,TBL 12 Group A: Superior and Posterior Mediastina and QUIZ,DeFouw; Varricchio
+2019,"Fri, Feb 15",11:30 AM,0.5,,"TBL 10, 11, and 12 Quiz Group A",
+2019,"Fri, Feb 15",1:00 PM,2.5,,TBL 12 Group B: Superior and Posterior Mediastina and QUIZ,DeFouw; Varricchio
+2019,"Fri, Feb 15",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Fri, Feb 15",3:30 PM,0.5,,"TBL 10, 11, and 12 Quiz Group B",
+2019,"Sun, Feb 17",6:00 PM,0.5,,Assessment for Flipped Session #1 on Lecture Podcast: Physiology (Due Sunday Feb 17 by 6pm),
+2019,"Mon, Feb 18",9:00 AM,1,L6,Lecture: Control of blood pressure,Shirakova
+2019,"Mon, Feb 18",10:00 AM,1,L7,Lecture: Microcirculation,Shirakova
+2019,"Mon, Feb 18",11:00 AM,1,,Interactive Session for Flipped Session #1: Physio Lecture 4 Hemodynamics ARS Sessions,Shirakova
+2019,"Mon, Feb 18",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Mon, Feb 18",,1,,Supplementary Review Foundations Podcast: Autonomic,Sultatos
+2019,"Tue, Feb 19",9:00 AM,1,L8,Lecture: HTN - Pathology,Peters
+2019,"Tue, Feb 19",10:00 AM,1,L9,Lecture: HTN - Clinical,Gerula
+2019,"Tue, Feb 19",11:00 AM,1,L10,Lecture: Anti-hypertensives,Gerula
+2019,"Tue, Feb 19",1:00 PM,3,,PCM1: Cardiovascular Physical Exam  Small Group Session (1/3 class),Faculty
+2019,"Tue, Feb 19",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Wed, Feb 20",9:00 AM,1,L11,Lecture: Ischemic Heart Disease,Peters
+2019,"Wed, Feb 20",10:00 AM,1,L12,Lecture: Acute Coronary Syndrome,Gerula
+2019,"Wed, Feb 20",12:00 PM,1,,Reserved,
+2019,"Wed, Feb 20",1:00 PM,3,,PCM1: Cardiovascular Physical Exam  Small Group Session (1/3 class),Faculty
+2019,"Wed, Feb 20",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Wed, Feb 20",,1,,Supplementary Review Foundations Podcast: Blood Coagulation Cascade,
+2019,"Thu, Feb 21",9:00 AM,1,L13,Lecture: Anti Anginal meds,
+2019,"Thu, Feb 21",10:00 AM,1,L14,Lecture: Hyperlipidemia,Gerula
+2019,"Thu, Feb 21",11:00 AM,1,L15,Lecture: Hyperlipidemia - pharmacology,Gerula
+2019,"Thu, Feb 21",1:00 PM,3,,PCM1: Cardiovascular Physical Exam  Small Group Session (1/3 class),Faculty
+2019,"Thu, Feb 21",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Fri, Feb 22",9:00 AM,2,,MANDATORY PBL Small Group: Ischemic Heart Disease,
+2019,"Fri, Feb 22",11:00 AM,1,L16,Lecture: Blood Vessels,Heller
+2019,"Fri, Feb 22",12:00 PM,1,,MANDATORY: CIM - Cardiology Physicians Panel,
+2019,"Fri, Feb 22",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Mon, Feb 25",9:00 AM,2,,Clinical Integration: PBL Review Ischemic Heart Disease,
+2019,"Mon, Feb 25",11:00 AM,1,,ARS Question and Answer Sessions: Anatomy and Embryology,DeFouw
+2019,"Mon, Feb 25",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Tue, Feb 26",9:00 AM,2,,Exam 1,
+2019,"Tue, Feb 26",11:30 AM,1,,Exam Review,
+2019,"Tue, Feb 26",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Tue, Feb 26",,1,,Lecture Podcast: Normal Cardiac Exam and Heart Murmurs,Gerula
+2019,"Wed, Feb 27",9:00 AM,1,L17,Lecture: The Cardiac Cycle & Valve Disorders and the Cardiac Cycle,Blackwell
+2019,"Wed, Feb 27",10:00 AM,1,L18,Lecture: Regulation of Cardiac Output,Blackwell
+2019,"Wed, Feb 27",12:00 PM,1,L19,Podcast for Flipped Session #2: Lecture 19 (L19) The Cardiac Cycle & Valve Disorders,Blackwell
+2019,"Wed, Feb 27",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Thu, Feb 28",9:00 AM,1,L20,Lecture: CHF,Heller
+2019,"Thu, Feb 28",10:00 AM,1,L21,Lecture: CHF Part A,Klapholz
+2019,"Thu, Feb 28",11:00 AM,1.5,L22,Lecture: CHF Part B,Klapholz
+2019,"Thu, Feb 28",1:00 PM,3,,PCM1: Advanced Cardiac  Physical Exam Small Group (1/2 class),Gerula
+2019,"Thu, Feb 28",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Fri, Mar 1",9:00 AM,1,L23,Lecture: Pathology Valvular Heart Disease,Peters
+2019,"Fri, Mar 1",10:00 AM,1,L24,Lecture:Valvular Heart Disease: Aortic,Maher
+2019,"Fri, Mar 1",11:00 AM,1,L25,Lecture:Valvular Heart Disease: Mitral,Maher
+2019,"Fri, Mar 1",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Sun, Mar 3",6:00 PM,1,,Assessment for Flipped Session #2: Lecture 20 (L20): Physiology Lecture Podcast due Sunday March 3 by 6pm,
+2019,"Mon, Mar 4",9:00 AM,1,,Interarctive Session for Flipped Session #2: Physiology ARS,
+2019,"Mon, Mar 4",10:00 AM,1,L26,Valvular Heart Disease Part B Simulation,Maher
+2019,"Mon, Mar 4",1:00 PM,3,,PCM1: Advanced Cardiac  Physical Exam Small Group (1/2 class),Gerula
+2019,"Mon, Mar 4",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Tue, Mar 5",9:00 AM,1,L27a,Lecture: Endocarditis and Myocarditis,Maher
+2019,"Tue, Mar 5",10:00 AM,1,L27b,Lecture: Endocarditis,Cennimo
+2019,"Tue, Mar 5",11:00 AM,1,L28,Lecture: Pericardium & Right Heart,Maher
+2019,"Tue, Mar 5",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Wed, Mar 6",9:00 AM,1,,MANDATORY Small Groups PBL: Valve problems,
+2019,"Wed, Mar 6",11:00 AM,1,L29,Lecture: Electrical Activity of the Heart,Blackwell
+2019,"Wed, Mar 6",12:00 PM,1,,Reserved,
+2019,"Wed, Mar 6",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Thurs, Mar 7",9:00 AM,1,L30,Lecture: EKG and Placement Part A,Blackwell
+2019,"Thu, Mar 7",10:00 AM,1,L31,Lecture: EKG and Placement Part B,Blackwell
+2019,"Thu, Mar 7",12:00 PM,1,,MANDATORY: Cardiac Patient Experience Panel,
+2019,"Thu, Mar 7",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Thu, Mar 7",,1,L32,Lecture Podcast: Conduction System,
+2019,"Thu, Mar 7",,1,L33,Lecture Podcast: Arrhythmias,
+2019,"Thu, Mar 7",,1,,Lecture Podcast: EKG Basics,Mazza
+2019,"Thu, Mar 7",,1,,Lecture Podcast: EKG Workshop,Mazza
+2019,"Fri, Mar 8",9:00 AM,1,L34,Lecture: Cardiovascular Nutrition,Zelig
+2019,"Fri, Mar 8",10:00 AM,1,,Clinical Integration: PBL Review Valve problems,
+2019,"Fri, Mar 8",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Mon, Mar 11",9:00 AM,3,,MANDATORY: Path Lab,Fitzhugh
+2019,"Mon, Mar 11",1:00 PM,4,,PCM1: EKG Workshop (1/3 class),
+2019,"Mon, Mar 11",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Tue, Mar 12",1:00 PM,4,,PCM1: EKG Workshop (1/3 class),
+2019,"Tue, Mar 12",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Tue, Mar 12",,1,L35,Lecture Podcast: Antiarrhythmic application,
+2019,"Tue, Mar 12",,1,L36,Lecture Podcast : Putting it all Together EKG,
+2019,"Wed, Mar 13",9:00 AM,1,,ARS: Question and Answer session: EKG,
+2019,"Wed, Mar 13",10:00 AM,1,,ARS: Review Session,
+2019,"Wed, Mar 13",1:00 PM,4,,PCM1: EKG Workshop (1/3 class),
+2019,"Wed, Mar 13",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Thu, Mar 14",9:00 AM,1,L37,Lecture: Shock,Solanki
+2019,"Thu, Mar 14",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Fri, Mar 15",2:00 PM,3,,PCM1: Community Preceptorship (1/5 class),Preceptors
+2019,"Mon, Mar 18",9:00 AM,2,,Exam 2,
+2019,"Mon, Mar 18",11:30 AM,1,,Exam Review,
+2019,"Mon, Mar 18",1:00 PM,3,,PCMI: Written and Oral Presentations (1/2 class),Learning Community Faculty
+2019,"Tue, Mar 19",9:00 AM,1,,Clinical Integration Simulation Session - Putting it All Together,
+2019,"Tue, Mar 19",1:00 PM,3,,PCMI: Written and Oral Presentations (1/2 class),Learning Community Faculty
+2019,"Wed, Mar 20",,1,,Self Directed Learning,
+2019,"Thu, Mar 21",,1,,Self Directed Learning,
+2019,"Fri, Mar 22",9:00 AM,3,,Integrated Cardio Shelf Exam,
