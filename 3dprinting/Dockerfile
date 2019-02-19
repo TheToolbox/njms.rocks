@@ -9,7 +9,8 @@ RUN apk add --no-cache openssh \
     && echo -e "HostKey /etc/ssh/host_keys/ssh_host_ecdsa_key \n"   >> /etc/ssh/sshd_config \
     && echo -e "HostKey /etc/ssh/host_keys/ssh_host_ed25519_key \n" >> /etc/ssh/sshd_config \
     && echo -e "AllowUsers ssh-user \n"                             >> /etc/ssh/sshd_config \ 
-    && echo -e "AllowTCPForwarding yes \n"                          >> /etc/ssh/sshd_config
+    && echo -e "AllowTCPForwarding yes \n"                          >> /etc/ssh/sshd_config \
+    && echo -e "GatewayPorts yes\n"                                 >> /etc/ssh/sshd_config
 
 EXPOSE 22
 
