@@ -18,7 +18,7 @@ sudo chmod 644 /lib/systemd/system/ssh-reverse-proxy.service
 # set up the command that the service calls, opening a Remote ssh proxy
 # NOTE: 
 echo "#!/bin/sh 
-ssh -v -i id_rsa ssh-user@njms.rocks -p 2222 -N -R 80:localhost:8080
+ssh -v -i id_rsa ssh-user@njms.rocks -p 2222 -N -R 8080:localhost:8080
 " > /opt/ssh-reverse-proxy.sh
 chmod +x /opt/ssh-reverse-proxy.sh
 
