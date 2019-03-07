@@ -14,6 +14,8 @@ RUN mkdir -p conf/certs/ \
     && openssl req -x509 -new -newkey rsa:4096 -nodes -keyout conf/certs/privkey.pem -out conf/certs/fullchain.pem \
         -days 365 -subj '/CN=njms.rocks' \
     && echo "08 2 * * * certbot renew" | crontab - 
+
+RUN a2enmod rewrite
 COPY --from=calendar-build /calendars/calendars/ ./htdocs/calendars
 COPY lecture-hall-temperature.html ./htdocs
 COPY httpd.conf ./conf/
