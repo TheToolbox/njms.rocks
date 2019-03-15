@@ -87,7 +87,7 @@ void send_data()
   snprintf(body, 40, "{\"temperature\":\"%2.2f\"}", temp);
   Log(body);
 
-  request.hostname = "tribble.ga"; //"njms.rocks";
+  request.hostname = "njms.rocks"; //"njms.rocks";
   request.port = 80;
   request.path = "/api/temperatures";
   request.body = body;
