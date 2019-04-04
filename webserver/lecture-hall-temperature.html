@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>❄️What temperature is B556 today?❄️</title>
+    <title>What temperature is B556 today?</title>
     <!-- Load c3.css -->
     <!--<link href="/path/to/c3.css" rel="stylesheet">-->
 
@@ -127,6 +127,15 @@
             .then(data => {
                 document.getElementById('temp').innerHTML = ('' + data.temperature).substring(0, 5) + ' &#176;F';
                 document.getElementById('timestamp').innerHTML = 'Last updated ' + (new Date(data.time)).toLocaleTimeString();
+
+                const titleEl = document.querySelector('title');
+                if (data.temperature < 71) {
+                    titleEl.innerHTML = "❄️What temperature is B556 today?❄️";
+                } else if (data.temperature > 75) {
+                    titleEl.innerHTML = "🔥What temperature is B556 today?🔥"
+                } else {
+                    titleEl.innerHTML = "What temperature is B556 today?";
+                }
             });
     }
 
