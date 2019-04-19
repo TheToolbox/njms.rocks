@@ -11,7 +11,7 @@ job 1:
     - server
   script: #try building each of the docker images before we go any further
     - docker info
-    - docker-compose build -f docker-compose.yml -f docker-compose.prod.yml 
+    - docker-compose -f docker-compose.yml -f docker-compose.prod.yml build
 
 job 2:
   stage: test
