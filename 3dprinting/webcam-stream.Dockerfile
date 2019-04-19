@@ -6,5 +6,5 @@ RUN apk add --no-cache vlc \
 USER stream-user
 EXPOSE 8080
 
-CMD vlc -vvv $STREAM_SOURCE_URL \
-        --sout '#standard{access=http,mux=ogg,dst=njms.rocks:8080}'
+CMD vlc $STREAM_SOURCE_URL \
+        --sout '#standard{access=http,mux=ogg,dst=localhost:8080}'
