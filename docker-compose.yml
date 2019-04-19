@@ -36,6 +36,9 @@ services:
       dockerfile: webcam-stream.Dockerfile
     environment:
       STREAM_SOURCE_URL: http://3dprinting-ssh-proxy:8080/webcam/?action=stream
+    depends_on:
+      - webserver
+      - 3dprinting-ssh-proxy
   #mongo:
    # image: mongo
     #volumes: 
