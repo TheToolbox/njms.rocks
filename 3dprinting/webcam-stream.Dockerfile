@@ -8,7 +8,7 @@ EXPOSE 8080
 
 CMD while :; \
     do \
-        vlc -v --intf dummy $STREAM_SOURCE_URL --sout '#transcode{vcodec=mp4v,vb=750}:standard{access=http{mime=video/MP2T; codecs=mp4v},mux=ts,dst=:8080}'; \
+        vlc -v --intf dummy $STREAM_SOURCE_URL --sout '#transcode{vcodec=mp4v,vb=750}:standard{access=http{mime=video/MP2P},mux=ps,dst=:8080}'; \
         echo "Connection Failed. Trying again..."; \
         sleep 3; \
     done
