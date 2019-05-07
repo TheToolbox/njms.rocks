@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+
+html {
+    background: repeating-linear-gradient(135deg,
+        #2e2e2e,
+        #2e2e2e 5em,
+        #3f3f3f 5em,
+        #3f3f3f 10em);
+    background-size: 14.142135623730951em 14.142135623730951em;
+}
+
+body {
+    max-width: 760px;
+    font-family: 'K2D', sans-serif;
+    background-color: white;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    color: #cc0033;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+}
+
+#temp {
+    font-size: 5em;
+}
+
+footer {
+    margin-top: 2em;
+    font-size: 90%;
+}
+
+footer>p {
+    text-align: center;
+    font-style: italic;
+}
+
+/* styles for git link */
+.git-corner>svg {
+    transition-property: all;
+    fill: #4f4f4f;
+    color: #2e2e2e;
+    position: absolute;
+    top: 0;
+    border: 0;
+    left: 0;
+
+}
+
+.git-corner>svg:hover {
+    fill: #999;
+}
