@@ -18,6 +18,7 @@ RUN mkdir -p conf/certs/ \
 RUN a2enmod rewrite
 COPY --from=calendar-build /calendars/calendars/ ./htdocs/calendars
 COPY lecture-hall-temperature.html ./htdocs
+COPY style.css ./htdocs
 COPY httpd.conf ./conf/
 
 CMD certbot certonly --apache \
