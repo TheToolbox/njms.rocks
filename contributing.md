@@ -3,7 +3,7 @@
 Contributing to NJMS.rocks is pretty easy. You can do it all in your browser!
 
 1. Create a Gitlab Account [here](https://gitlab.com/users/sign_in#register-pane).
-2. Email techinmed@njms.rutgers.edu to request permission to contribute.
+2. Email techinmed@njms.rutgers.edu with your Gitlab username to request permission to contribute.
 3. Once you have permission, find the file you want to edit and hit the 'edit' button. Click the 'Fork' button if it appears.
     - A list of fun files to edit can be found below
 4. Make your edits and hit 'Commit changes'!
