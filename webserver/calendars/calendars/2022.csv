@@ -477,30 +477,76 @@
 2019,"Wed, May 29",,,,Self-directed learning,
 2019,"Thu, May 30",,,,Self-directed learning,
 2019,"Fri, May 31",9:00 AM,3,,RENAL SHELF EXAM,
-2019,"Mon, Aug 12",9:00 AM,0.5,,GI Orientation,
-2019,"Mon, Aug 12",9:30 AM,2.5,,Lectures,
-2019,"Mon, Aug 12",1:00 PM,1.5,,Lectures,
-2019,"Tue, Aug 13",9:00 AM,2,,Lectures,
-2019,"Tue, Aug 13",12:00 PM,4,,MOCK EXAM,
-2019,"Wed, Aug 14",9:00 AM,3,,TBL 16 (A),
-2019,"Wed, Aug 14",1:00 PM,3,,TBL 16 (B),
-2019,"Thu, Aug 15",9:00 AM,3,,Lectures,
-2019,"Thu, Aug 15",1:00 PM,4,,MANDATORY HESJ2,
-2019,"Fri, Aug 16",9:00 AM,3,,TBL 17 & Quiz,
-2019,"Fri, Aug 16",12:00 PM,1,,MANDATORY PCM2,
-2019,"Fri, Aug 16",1:00 PM,3,,TBL 17 & Quiz,
-2019,"Fri, Aug 16",1:00 PM,4,,IPE Session (1/28 Class),
-2019,"Mon, Aug 19",9:00 AM,3,,TBL 18,
-2019,"Mon, Aug 19",1:00 PM,3,,TBL 18,
-2019,"Tue, Aug 20",9:00 AM,3,,Lectures,
-2019,"Tue, Aug 20",1:00 PM,1,,Lectures,
-2019,"Wed, Aug 21",9:00 AM,3,,Lectures,
-2019,"Wed, Aug 21",12:00 PM,1,,MANDATORY CASE,
-2019,"Wed, Aug 21",1:00 PM,3,,PCM2 Small Group (1/2 Class),
-2019,"Thu, Aug 22",9:00 AM,3,,Lectures,
-2019,"Thu, Aug 22",1:00 PM,3,,PCM2 Small Group (1/2 Class),
-2019,"Fri, Aug 23",9:00 AM,3,,TBL 19 & Quiz,
-2019,"Fri, Aug 23",1:00 PM,3,,TBL 19 & Quiz,
-2019,"Fri, Aug 23",1:00 PM,4,,IPE Session (1/28 Class),
-2019,"Mon, Aug 26",9:00 AM,3,,UNIT 1 EXAM,
-
+2019,"Mon, Aug 12",9:00 AM,0.5,,MANDATORY. Digestive Organ System Orientation,"Drs. De Lorenzo, Kampf and Tentler"
+2019,"Mon, Aug 12",9:30 AM,1,L1,Physiology of the GIT: Intro and Salivary Secretion ,Dr. Ferraris
+2019,"Mon, Aug 12",10:30 AM,1,L2,Gastric Secretion ,Dr. Ferraris
+2019,"Mon, Aug 12",12:30 PM,1,L3,Lecture PCM 2: Physical Examination of the Oral Cavity ,Dr. Fatahzadeh
+2019,"Mon, Aug 12",1:30 PM,1,L4,Lecture PCM 2: Abdominal Examination ,Dr. Anjaria
+2019,"Tue, Aug 13",9:00 AM,1,L5,"Pancreatic, Hepatic and Biliary Secretions ",Dr. Ferraris
+2019,"Tue, Aug 13",10:00 AM,1,L6,Control and Integration of Secretion ,Dr. Ferraris
+2019,"Tue, Aug 13",12:30 PM,3,,MANDATORY. Mock Step 1 Exam,
+2019,"Wed, Aug 14",9:00 AM,3,,MANDATORY. TBL 16 Group A: Differentiation and Microscopic Structure of the GI Tract  ,Drs. Defouw and Varricchio
+2019,"Wed, Aug 14",1:00 PM,3,,MANDATORY. TBL 16 Group B: Differentiation and Microscopic Structure of the GI Tract,Drs. Defouw and Varricchio
+2019,"Thu, Aug 15",10:00 AM,1,L7,"Digestion and Absorption of Carbohydrates, Proteins and Vitamins ",Dr. Ferraris
+2019,"Thu, Aug 15",11:00 AM,1,L8,"Absorption of Water, Ions and Minerals ",Dr. Ferraris
+2019,"Thu, Aug 15",1:00 PM,5,,MANDATORY. HESJ2 CAM and Integrative Medicine,Dr. Dalla-Piazza
+2019,"Fri, Aug 16",9:00 AM,3,,"MANDATORY. TBL and Lab 17, QUIZ on TBL 16 and 17, Group B: Anterolateral Abdominal Wall ",Drs. Defouw and Varricchio
+2019,"Fri, Aug 16",12:00 PM,1,,MANDATORY. PCM 2: MIP Orientation,Dr. Kennedy
+2019,"Fri, Aug 16",1:00 PM,3,,"MANDATORY. TBL and Lab 17, QUIZ on TBL 16 and 17, Group A: Anterolateral Abdominal Wall",Drs. Defouw and Varricchio
+2019,"Fri, Aug 16",1:00 PM,4,,"IPE Session (small group, see individual schedule)",
+2019,"Mon, Aug 19",9:00 AM,3,,"MANDATORY. TBL and Lab 18, Group A: Peritoneum, Esophagus, Stomach",Drs. Defouw and Varricchio
+2019,"Mon, Aug 19",1:00 PM,3,,"MANDATORY. TBL and Lab 18, Group B: Peritoneum, Esophagus, Stomach",Drs. Defouw and Varricchio
+2019,"Tue, Aug 20",9:00 AM,1,L9,Absorption of Lipids and Intro to the Gut Microbiome ,Dr. Ferraris
+2019,"Tue, Aug 20",10:00 AM,1,L10,G.I Tract Motility I: Properties of G.I. Smooth Muscle Cells,Dr. Ferraris
+2019,"Tue, Aug 20",11:00 AM,1,L11,Introduction to Clinical Aspects of Digestive Diseases ,Dr. Ahlawat
+2019,"Wed, Aug 21",9:00 AM,1,L12,G.I. Tract Motility II,Dr. Ferraris
+2019,"Wed, Aug 21",10:00 AM,1,L13,Clinical Aspects of Diseases of the Esophagus ,Dr. Patel
+2019,"Wed, Aug 21",11:00 AM,1,L14,Pathological Aspects of Diseases of the Esophagus ,Dr. Klein
+2019,"Wed, Aug 21",12:00 PM,1,,MANDATORY. CASE: Introduction to Step 1 and How to use second year ,Dr. Hill
+2019,"Wed, Aug 21",1:00 PM,3,,MANDATORY. PCM 2 Small Group Session: Abdominal Physical Examination (1/2 class),Faculty
+2019,"Thu, Aug 22",9:00 AM,1,L15,Pathological Aspects of Diseases of the Stomach ,Dr. Klein
+2019,"Thu, Aug 22",10:00 AM,1,L16,Clinical Aspects of Diseases of the Stomach ,Dr. Patel
+2019,"Thu, Aug 22",11:00 AM,1,L17,GI Pharmacology 1,Dr. Ferraris
+2019,"Thu, Aug 22",1:00 PM,3,,MANDATORY. PCM 2 Small Group Session: Abdominal Physical Examination (1/2 class),Faculty
+2019,"Fri, Aug 23",9:00 AM,3,,"MANDATORY. TBL and Lab 19, QUIZ on TBL 18 and 19, Group B: Midgut, Hindgut Derivatives ",Drs. Defouw and Varricchio
+2019,"Fri, Aug 23",12:00 PM,1,,Large Group ARS Discussion - Normal GI Histology ,Dr. De Lorenzo
+2019,"Fri, Aug 23",1:00 PM,3,,"MANDATORY. TBL and Lab 19, QUIZ on TBL 18 and 19, Group A: Midgut, Hindgut Derivatives",Drs. Defouw and Varricchio
+2019,"Fri, Aug 23",1:00 PM,4,,"IPE Session (small group, see individual schedule)",
+2019,"Mon, Aug 26",9:00 AM,3,,MANDATORY. Unit 1 Digestive System Exam,
+2019,"Tue, Aug 27",9:00 AM,1,L18,"Diarrhea, Constipation/Management ",Dr. Pievsky
+2019,"Tue, Aug 27",10:00 AM,1,L19,Pathology of the Small Intestine,Dr. Klein
+2019,"Tue, Aug 27",11:00 AM,1,L20,Medical Management of Non-viral Hepatitis,Dr. Lingiah
+2019,"Tue, Aug 27",1:00 PM,1,L21,Medical Management of Viral Hepatitis,Dr. Niazi
+2019,"Wed, Aug 28",9:00 AM,3,,"MANDATORY. TBL and Lab 20, QUIZ on TBL 20, Group A: Liver, Gallbladder, Pancreas ",Drs. Defouw and Varricchio
+2019,"Wed, Aug 28",12:00 PM,1,,MANDATORY. Student Affairs Lecture: Orientation to Step 1,Dr. Hill
+2019,"Wed, Aug 28",2:00 PM,3,,"MANDATORY. TBL and Lab 20, QUIZ on TBL 20, Group B: Liver, Gallbladder, Pancreas",Drs. Defouw and Varricchio
+2019,"Thu, Aug 29",9:00 AM,1,L22,Medical Aspects of Cholelithiasis / Biliary Tract Disease / Pancreatitis / Pancreatic Tumor Syndromes \ ,Dr. Ahlawat
+2019,"Thu, Aug 29",10:00 AM,1,L23,Pathology of the Gallbladder and Pancreas,Dr. Klein
+2019,"Thu, Aug 29",11:00 AM,1,L24,"Medical Aspects of Chronic Liver Disease, Cirrhosis/Management",Dr. Olivo-Salcedo
+2019,"Thu, Aug 29",1:00 PM,1,,"MANDATORY. HESJ2 Lecture: Weight Bias, Food Insecurity, and Patient Resources",Dr. Dalla-Piazza
+2019,"Thu, Aug 29",2:00 PM,2,,MANDATORY. HESJ2 Small Group Session: Weight Bias and Food Insecurity,Faculty
+2019,"Fri, Aug 30",10:00 AM,1,L25,"Pathology of the Liver: LFTs, Hepatitis",Dr. Klein
+2019,"Fri, Aug 30",11:00 AM,1.5,L26,"Lecture PCM 2: Acute Abdomen: D/Dx, Management",Dr. Anjaria
+2019,"Fri, Aug 30",1:00 PM,4,,"IPE Session (small group, see individual schedule)",
+2019,"Mon, Sep 2",,,,Labor Day (RU),
+2019,"Tue, Sep 3",9:00 AM,1,L27,Chronic Hepatitis and Cirrhosis,Dr. Klein
+2019,"Tue, Sep 3",10:00 AM,0.5,L28,Pathology of Tumors of the Liver,Dr. Klein
+2019,"Tue, Sep 3",11:00 AM,1,L29,Liver Transplant ,Dr. Pyrsopoulos
+2019,"Tue, Sep 3",1:00 PM,1,,ARS Case Discussion: GI Radiology,Dr. Shah
+2019,"Tue, Sep 3",2:00 PM,1,L30,GI Pharmacology 2,Dr. Ferraris
+2019,"Wed, Sep 4",9:15 AM,2.75,,MANDATORY - Laboratory: Gross / Histopathology of the Digestive System,Dr. Fitzhugh
+2019,"Wed, Sep 4",1:00 PM,1,L31,Clinical Aspects of Diseases of the Colon and Rectum,Dr. Pievsky
+2019,"Wed, Sep 4",2:00 PM,1.5,L32,Pathological Aspects of Diseases of the Colon and Rectum,Dr. Klein
+2019,"Wed, Sep 4",3:30 PM,1,L33,Bariatric Surgery,Dr. Cummings
+2019,"Thu, Sep 5",,,,Self-Directed Learning,
+2019,"Fri, Sep 6",12:00 PM,5,,MANDATORY. Anatomy Practical Exam (individual schedule TBA),
+2019,"Mon, Sep 9",9:00 AM,3,,MANDATORY. Unit 2 Digestive System Exam,
+2019,"Mon, Sep 9",1:00 PM,,,MANDATORY. PCM 2 Small Group Session: Written and Oral Presentations \ Learning-Community Faculty (1/2 class),Faculty
+2019,"Tue, Sep 10",9:00 AM,2,,Independent group learning: Digestive Disease and Liver Disease Small Group Case Discussions,
+2019,"Tue, Sep 10",11:00 AM,1,,Large Group Review of GI Case,Dr. Tentler
+2019,"Tue, Sep 10",1:00 PM,,,MANDATORY. PCM 2 Small Group Session: Written and Oral Presentations \ Learning-Community Faculty (1/2 class),Faculty
+2019,"Wed, Sep 11",10:00 AM,1,,Large Group Review of Liver Disease Case,Dr. Lamba
+2019,"Wed, Sep 11",11:00 AM,1.5,,STEP- FACTS,Dr. Lamba
+2019,"Thu, Sep 12",,,,Self-Directed Learning,
+2019,"Fri, Sep 13",9:00 AM,3,,MANDATORY. Digestive System Shelf Exam,
+2019,"Fri, Sep 13",1:00 PM,3,,"IPE Session (small group, see individual schedule)",
