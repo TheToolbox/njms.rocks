@@ -3,7 +3,7 @@ import * as URL from 'url';
 import * as persist from 'node-persist';
 import * as db from './db';
 
-(async function init() {
+async function init() {
     const p = await persist.init();
 
     console.log('Starting API server...');
@@ -25,7 +25,9 @@ import * as db from './db';
             }));
         }, 3000);
     }
-})();
+}
+
+init();//actually run init!
 
 async function respond(request: http.IncomingMessage, response: http.ServerResponse) {
     try {
