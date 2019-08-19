@@ -77,7 +77,7 @@
         x = document.querySelector.bind(document);
         x(`#${loc}     .emoji`).innerHTML = heatEmoji(temperature);
         x(`#${loc}      .temp`).innerHTML = (1.8 * temperature + 32).toFixed(2) + ' &#176;F';
-        x(`#${loc}  .humidity`).innerHTML = (humidity).toFixed(2) + '%';
+        x(`#${loc}  .humidity`).innerHTML = (humidity).toFixed(2) + '% humidity';
         x(`#${loc} .timestamp`).innerHTML = 'Last updated ' + (new Date(timestamp)).toLocaleTimeString();
     }
 

@@ -56,6 +56,7 @@ section {
 }
 
 .temp {
+    margin: 0;
     font-size: 5em;
 }
 /* styles for git link */
