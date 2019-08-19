@@ -70,7 +70,7 @@
 
     function updateUI(loc, data) {
         const { temperature, humidity, timestamp } = data;
-        x = document.querySelector;
+        x = document.querySelector.bind(document);
         x(`#${loc}     .emoji`).innerHTML = heatEmoji(temperature);
         x(`#${loc}      .temp`).innerHTML = temperature + ' &#176;F';
         x(`#${loc} .timestamp`).innerHTML = 'Last updated ' + (new Date(timestamp)).toLocaleTimeString();
