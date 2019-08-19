@@ -17,7 +17,7 @@ sensor.setMaxRetries(3);
 function get_temps() {
 
     const { temperature, humidity, isValid, errors } = sensor.readSync(DHT22, PIN); //for whatever reason, the promise-based version of this function doesn't work so we're doing it synchronously
-
+    
     // keep count of any errors in case we want to track that later
     samples.error_count += errors;
     // if the data's invalid, we're done here
