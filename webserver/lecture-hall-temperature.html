@@ -45,14 +45,18 @@
     </header>
 
     <section id="B556">
-        <h2><span class="emoji"></span> What temperature is B556?</h2>
+        <h2>What temperature is B556?</h2>
+        <div class="emoji"></div>
         <p class="temp">Loading...</p>
+        <p class="humidity"></p>
         <p class="timestamp"></p>
     </section>
 
     <section id="B552">
-        <h2><span class="emoji"></span> What temperature is B552?</h2>
+        <h2>What temperature is B552?</h2>
+        <div class="emoji"></div>
         <p class="temp">Loading...</p>
+        <p class="humidity"></p>
         <p class="timestamp"></p>
     </section>
 
@@ -73,6 +77,7 @@
         x = document.querySelector.bind(document);
         x(`#${loc}     .emoji`).innerHTML = heatEmoji(temperature);
         x(`#${loc}      .temp`).innerHTML = (1.8 * temperature + 32).toFixed(2) + ' &#176;F';
+        x(`#${loc}  .humidity`).innerHTML = (humidity).toFixed(2) + '%';
         x(`#${loc} .timestamp`).innerHTML = 'Last updated ' + (new Date(timestamp)).toLocaleTimeString();
     }
 

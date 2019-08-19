@@ -34,6 +34,12 @@ header * {
     border-radius: 1em;
 }
 
+h1 {
+    color: #cc0033;
+    /*text-decoration: underline;*/
+    font-weight: bold;
+}
+
 section {
     max-width: 760px;
     font-family: 'K2D', sans-serif;
@@ -45,26 +51,13 @@ section {
     border-radius: 1em;
 }
 
-h1 {
-    color: #cc0033;
-    /*text-decoration: underline;*/
-    font-weight: bold;
-}
-
-#temp {
+.emoji {
     font-size: 5em;
 }
 
-footer {
-    margin-top: 2em;
-    font-size: 90%;
+.temp {
+    font-size: 5em;
 }
-
-footer>p {
-    text-align: center;
-    font-style: italic;
-}
-
 /* styles for git link */
 .git-corner>svg {
     transition-property: all;
