@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Lecture Hall Weather Report</title>
+    <title>⛈️Lecture Hall Weather Report⛈️</title>
     <!-- Load c3.css -->
     <!--<link href="/path/to/c3.css" rel="stylesheet">-->
 
@@ -74,15 +74,17 @@
 
     function updateUI(loc, data) {
         const { temperature, humidity, timestamp } = data;
+        const f = 1.8 * temperature + 32;
+
         x = document.querySelector.bind(document);
-        x(`#${loc}     .emoji`).innerHTML = heatEmoji(temperature);
-        x(`#${loc}      .temp`).innerHTML = (1.8 * temperature + 32).toFixed(2) + ' &#176;F';
-        x(`#${loc}  .humidity`).innerHTML = (humidity).toFixed(2) + '% humidity';
+        x(`#${loc}     .emoji`).innerHTML = heatEmoji(f);
+        x(`#${loc}      .temp`).innerHTML = f.toFixed(2) + ' &#176;F';
+        x(`#${loc}  .humidity`).innerHTML = humidity.toFixed(2) + '% humidity';
         x(`#${loc} .timestamp`).innerHTML = 'Last updated ' + (new Date(timestamp)).toLocaleTimeString();
     }
 
     function heatEmoji(temperature) {
-        return temperature > 75 ? "🔥" : temperature < 71 ? "❄️" : "";
+        return temperature > 75 ? "🔥" : (temperature < 71 ? "❄️" : "");
     }
 
     updateTemperature();
