@@ -46,5 +46,13 @@ function send_temps() {
         .end(JSON.stringify(samples)); // send the stringified data as the last part of the request
 }
 
+function ruwireless() {//hack to keep running on RUWireless until proper management is available
+    https.request('https://cisco-wlc.ruw.rutgers.edu/login.html', {
+        method: 'POST',
+    }).end('buttonClicked=4&redirect_url=https%3A%2F%2F1.1.1.1%2F&err_flag=0&password=RUGuestPass&username=RUGuestPass');
+}
+
 setInterval(get_temps, 5000); // get temps every 1 second
 setInterval(send_temps, 20000); // send temps every 10 seconds
+setInterval(ruwireless, 60000);
+ruwireless();
