@@ -7,31 +7,44 @@ const samples = {
     temperature: [],
     humidity: [],
     error_count: 0,
-    timestamps: [],
+    timestamp: [],
     location: process.env['SENSOR_LOCATION'] || 'not_set', // what room we're in
 };
 
 sensor.initialize(DHT22, PIN);
+sensor.setMaxRetries(3);
 
 function get_temps() {
 
-    const { temperature, humidity, valid, errors } = sensor.readSync(DHT22, PIN); //for whatever reason, the promise-based version of this function doesn't work so we're doing it synchronously
+    const { temperature, humidity, isValid, errors } = sensor.readSync(DHT22, PIN); //for whatever reason, the promise-based version of this function doesn't work so we're doing it synchronously
 
     // keep count of any errors in case we want to track that later
     samples.error_count += errors;
     // if the data's invalid, we're done here
-    if (!valid) { return; }
+    if (!isValid) { return; }
     // add temp, humidity, and the current time to our list of data
-    samples.temperatures.push(temperature);
+    samples.temperature.push(temperature);
     samples.humidity.push(humidity);
-    timestamps.push(Date.now());
+    samples.timestamp.push(Date.now());
 }
 
 function send_temps() {
     // do an HTTP POST to our API to send the data. Currently we're ignoring any errors (for simplicity)
-    https.request('https://njms.rocks/api/temperatures', { method: 'POST' })
+    https.request('https://njms.rocks/api/temperatures',
+        { method: 'POST' },
+        function(response) {
+            if (response.statusCode === 200) {
+                samples.error_count = 0;
+                samples.humidity = [];
+                samples.temperature = [];
+                samples.timestamp = [];
+            } else {
+                console.error('Non-200 response from API');
+            }
+        })
+        .on('error', err => console.error(err))
         .end(JSON.stringify(samples)); // send the stringified data as the last part of the request
 }
 
-setInterval(get_temps, 1000); // get temps every 1 second
-setInterval(send_temps, 10000); // send temps every 10 seconds
+setInterval(get_temps, 5000); // get temps every 1 second
+setInterval(send_temps, 20000); // send temps every 10 seconds
