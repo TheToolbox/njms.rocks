@@ -10,13 +10,28 @@ html {
 }
 
 body {
-    max-width: 760px;
-    font-family: 'K2D', sans-serif;
-    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header {
+    margin-top: 3em;
+    flex-grow: 100;
+    flex-basis: 90%;
+    font-family: 'K2D';
+}
+
+header * {
+    width: 65%;
     margin: auto;
-    margin-top: 1em;
-    padding: 1em;
+    margin-bottom: 1em;
+    padding: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
+    background-color: white;
+    border-radius: 1em;
 }
 
 h1 {
@@ -25,20 +40,25 @@ h1 {
     font-weight: bold;
 }
 
-#temp {
+section {
+    max-width: 760px;
+    font-family: 'K2D', sans-serif;
+    background-color: white;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.emoji {
     font-size: 5em;
 }
 
-footer {
-    margin-top: 2em;
-    font-size: 90%;
+.temp {
+    margin: 0;
+    font-size: 5em;
 }
-
-footer>p {
-    text-align: center;
-    font-style: italic;
-}
-
 /* styles for git link */
 .git-corner>svg {
     transition-property: all;

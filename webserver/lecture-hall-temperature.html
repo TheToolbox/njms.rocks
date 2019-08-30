@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>What temperature is B556 today?</title>
+    <title>⛈️Lecture Hall Weather Report⛈️</title>
     <!-- Load c3.css -->
     <!--<link href="/path/to/c3.css" rel="stylesheet">-->
 
@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <a href="https://gitlab.com/njms-tech-in-med/njms-rocks/blob/master/contributing.md" class="git-corner" aria-label="View source on Gitlab"><svg
-            xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 500 500" aria-hidden="true">
+    <a href="https://gitlab.com/njms-tech-in-med/njms-rocks/blob/master/contributing.md" class="git-corner"
+        aria-label="View source on Gitlab"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
+            viewBox="0 0 500 500" aria-hidden="true">
             <path d="M0,0 L0,500 L500,0 Z" class="triangle"></path>
             <g fill="none" fill-rule="evenodd" class="fox"
                 style="transform: rotate(-45deg) scale(0.46) translate(-50%,50%);">
@@ -38,32 +39,56 @@
             </g>
         </svg></a>
 
-    <h1>What temperature is B556?</h1>
-    <p id="temp">Loading...</p>
-    <p id="timestamp"></p>
-    <footer>Brought to you by NJMS Tech-in-Medicine</footer>
+    <header>
+        <h1>⛈️Lecture Hall Weather Report⛈️</h1>
+        <aside>Brought to you by NJMS Tech-in-Medicine</aside>
+    </header>
+
+    <section id="B556">
+        <h2>What temperature is B556?</h2>
+        <div class="emoji"></div>
+        <p class="temp">Loading...</p>
+        <p class="humidity"></p>
+        <p class="timestamp"></p>
+    </section>
+
+    <section id="B552">
+        <h2>What temperature is B552?</h2>
+        <div class="emoji"></div>
+        <p class="temp">Loading...</p>
+        <p class="humidity"></p>
+        <p class="timestamp"></p>
+    </section>
+
 </body>
 <script>
     function updateTemperature() {
         return fetch('/api/temperatures')
             .then(response => response.json())
             .then(data => {
-                document.getElementById('temp').innerHTML = ('' + data.temperature).substring(0, 5) + ' &#176;F';
-                document.getElementById('timestamp').innerHTML = 'Last updated ' + (new Date(data.time)).toLocaleTimeString();
-
-                const titleEl = document.querySelector('title');
-                if (data.temperature < 71) {
-                    titleEl.innerHTML = "❄️What temperature is B556 today?❄️";
-                } else if (data.temperature > 75) {
-                    titleEl.innerHTML = "🔥What temperature is B556 today?🔥"
-                } else {
-                    titleEl.innerHTML = "What temperature is B556 today?";
-                }
+                console.log(data);
+                updateUI('B552', data['B552']);
+                updateUI('B556', data['B556']);
             });
     }
 
+    function updateUI(loc, data) {
+        const { temperature, humidity, timestamp } = data;
+        const f = 1.8 * temperature + 32;
+
+        x = document.querySelector.bind(document);
+        x(`#${loc}     .emoji`).innerHTML = heatEmoji(f);
+        x(`#${loc}      .temp`).innerHTML = f.toFixed(2) + ' &#176;F';
+        x(`#${loc}  .humidity`).innerHTML = humidity.toFixed(2) + '% humidity';
+        x(`#${loc} .timestamp`).innerHTML = 'Last updated ' + (new Date(timestamp)).toLocaleTimeString();
+    }
+
+    function heatEmoji(temperature) {
+        return temperature > 75 ? "🔥" : (temperature < 71 ? "❄️" : "");
+    }
+
     updateTemperature();
-    setInterval(updateTemperature, 10049);  
+    setInterval(updateTemperature, 10079);  
 </script>
 
 </html>

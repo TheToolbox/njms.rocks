@@ -25,8 +25,14 @@ VOLUME /etc/ssh/host_keys
 CMD if [ ! -f "/etc/ssh/host_keys/ssh_host_rsa_key" ]; then \
         echo "building host keys..."; \
         ssh-keygen -f /etc/ssh/host_keys/ssh_host_rsa_key -N '' -t rsa; \
+    fi && \
+    if [ ! -f "/etc/ssh/host_keys/ssh_host_dsa_key" ]; then \
         ssh-keygen -f /etc/ssh/host_keys/ssh_host_dsa_key -N '' -t dsa; \
+    fi && \
+    if [ ! -f "/etc/ssh/host_keys/ssh_host_ecdsa_key" ]; then \
         ssh-keygen -f /etc/ssh/host_keys/ssh_host_ecdsa_key -N '' -t ecdsa; \
+    fi && \
+    if [ ! -f "/etc/ssh/host_keys/ssh_host_ed25519_key" ]; then \
         ssh-keygen -f /etc/ssh/host_keys/ssh_host_ed25519_key -N '' -t ed25519; \
-    fi \
-    && /usr/sbin/sshd -D -f /etc/ssh/sshd_config
+    fi && \
+    /usr/sbin/sshd -D -f /etc/ssh/sshd_config

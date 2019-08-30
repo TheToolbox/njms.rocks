@@ -1,0 +1,20 @@
+{
+  "name": "lec-hall-temp-sensors",
+  "version": "1.0.0",
+  "description": "Code to run on the lecture hall temperature sensors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "temperature"
+  ],
+  "author": "Jason 'Toolbox' Oettinger <jason@oettinger.email>",
+  "license": "MIT",
+  "dependencies": {
+    "node-dht-sensor": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2"
+  }
+}

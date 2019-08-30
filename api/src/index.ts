@@ -3,7 +3,7 @@ import * as URL from 'url';
 import * as persist from 'node-persist';
 import * as db from './db';
 
-(async function init() {
+async function init() {
     const p = await persist.init();
 
     console.log('Starting API server...');
@@ -25,7 +25,23 @@ import * as db from './db';
             }));
         }, 3000);
     }
-})();
+}
+
+init();//actually run init!
+
+interface IncomingData {
+    temperature: Array<number>,
+    humidity: Array<number>,
+    error_count: number,
+    timestamp: Array<number>,
+    location: string,
+}
+
+const state: { [index: string]: { temperature: number, humidity: number, timestamp: number } } = {};
+
+function average(arr: Array<number>) {
+    return arr.reduce((x, y) => x + y) / arr.length;
+}
 
 async function respond(request: http.IncomingMessage, response: http.ServerResponse) {
     try {
@@ -35,10 +51,13 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
             case 'POST /temperatures':
                 const body = await getBody(request);
                 try {
-                    const data = JSON.parse(body);
-                    console.log("Got new temperature: " + data.temperature);
-                    await persist.setItem('temperature', data.temperature);
-                    await persist.setItem('time', Date.now());
+                    const data = JSON.parse(body) as IncomingData;
+                    console.log("Got new data: " + data.temperature);
+                    state[data.location] = {
+                        temperature: average(data.temperature),
+                        humidity: average(data.humidity),
+                        timestamp: Math.round(average(data.timestamp)),
+                    };
                     await db.addTemp(Number(data.temperature));
                     return response.end();
                 } catch (e) {
@@ -46,10 +65,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                     return response.end(err('malformed input', e));
                 }
             case 'GET /temperatures':
-                const temp = await persist.getItem('temperature');
-                const time = await persist.getItem('time');
-
-                return response.end(JSON.stringify({ temperature: temp, time: time }));
+                return response.end(JSON.stringify(state));
         }
         console.log(method + ' ' + url.pathname);
         const body = await getBody(request);
