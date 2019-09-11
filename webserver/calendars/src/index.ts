@@ -17,25 +17,28 @@ function generateCalendar(fileName: string) {
         .map(line => {
             const parts: string[] = [];
             let temp = '';
-            let isQuote = false;
-            let isEscaped = false;
-            for (const c of line) {
-                if (c === '\\') {//TODO learn how escaping works for csv technically
-                    isEscaped = !isEscaped;
-                    if (isEscaped) { continue; }
-                } else {
-                    isEscaped = false;
+            let isQuoted = false;
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                const nextChar = line[i + 1] || '';
+
+                if (char === '"') {
+                    if (nextChar === '"') {
+                        temp += char;
+                        i += 1;
+                        continue;
+                    } else {
+                        isQuoted = !isQuoted;
+                        continue;
+                    }
                 }
-                if (c === '"' && !isEscaped) {
-                    isQuote = !isQuote;
-                    continue;
-                }
-                if (c === ',' && !isQuote) {
+
+                if (char === ',' && !isQuoted) {
                     parts.push(temp);
                     temp = '';
                     continue;
                 }
-                temp += c;
+                temp += char;
             }
 
             return {
@@ -62,7 +65,7 @@ function generateCalendar(fileName: string) {
             throw new Error(`Attempted to build invalid date! Date(${event.date}) and Time(${event.time})`);
         }
 
-        
+
         //touching up name of events
         let name = event.name.replace(/mandatory/ig, 'MANDATORY').trim();//capitalize all instances of MANDATORY
         name = event.lecture ?//if the event has a lecture label
