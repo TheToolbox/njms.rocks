@@ -2,7 +2,9 @@
 FROM node:10-alpine as calendar-build
 COPY ./calendars /calendars
 WORKDIR /calendars
-RUN npm install && npm run-script build
+RUN npm install && \
+    node_modules/typescript/bin/tsc && \
+    node compiled/index.js
 
 FROM httpd
 RUN echo "deb http://ftp.debian.org/debian stretch-backports main" | tee /etc/apt/sources.list.d/backports.list \
