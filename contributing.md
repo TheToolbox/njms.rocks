@@ -16,10 +16,10 @@ Contributing to NJMS.rocks is pretty easy. You can do it all in your browser!
  3. Rearrange/Create columns so that it looks like the table below
  4. Save as a .CSV file
  6. Choose your calendar from the files in [this folder](https://gitlab.com/njms-tech-in-med/njms-rocks/tree/master/webserver/calendars/calendars)
- 7. Click 'Edit'. You will see the calendar update page.
+ 7. Click 'Edit'. You will see the Calendar Update Page.
  8. Open the CSV file in notepad and copy the entire content
- 9. Paste this content to the end of the calendar update page (or over the existing data if you wish to overwrite a whole document).
-   - If you need to make edits to single existing events or correct typos in the future, you can simply make the changes by following step 7 onward. Just change the data right on the calendar update page.
+ 9. Paste this content to the end of the Calendar Update Page (or over the existing data if you wish to overwrite a whole document).
+   - If you need to make edits to single existing events or correct typos in the future, you can make the changes by manually editing from the Calendar Update Page.
  10. Make sure 'Start a new Merge Request' is checked.
  11. Hit 'Commit Changes'. At the bottom of the next page, hit 'Submit Merge Request' and you're done!
 
