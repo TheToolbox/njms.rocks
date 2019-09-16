@@ -22,7 +22,7 @@ header {
     font-family: 'K2D';
 }
 
-header * {
+header *, footer {
     width: 65%;
     margin: auto;
     margin-bottom: 1em;
