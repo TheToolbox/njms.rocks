@@ -1,6 +1,6 @@
 # NJMS.rocks
 
-This repo contains all of the code that powers NJMS.rocks, a site dedicated to simplifying and improving student life at NJMS.
+This repo contains all of the code that powers NJMS.rocks, a site dedicated to simplifying and improving student life at NJMS. Click 'edit' to edit this page!
 
 # Architecture
 A major goal of the project is to be sustainable over the long term and to require little maintainance. 
@@ -10,8 +10,8 @@ The system is supposed to be able to stand itself up by running ./install.sh on 
 Currently, we've just got the calendar-generation and temperature monitoring running (and barely at that!), but soon a full web frontend should appear, and its code will be here as well.
 
 ## TODO
- - Automate deployment via GitLab
- - Investigate 3d printer integration (Octoprint?)
+ - Automate deployment via GitLab (done!)
+ - Investigate 3d printer integration (Octoprint?) (done-ish?)
 
 ### API
  - Store temperatures, allow paginated pulling of sensor data
@@ -27,8 +27,16 @@ Currently, we've just got the calendar-generation and temperature monitoring run
  - Add tests to validate things
 
 ### Sensors
- - Automate firmware deployment
+ - Automate firmware deployment (now raspis, so more software than firmware)
+    - set up to deploy automatically from gitlab
 
 ### Webserver
  - Allow browsing of historical sensor data, graphing, etc.
- - TLS via LetsEncrypt
+ - TLS via LetsEncrypt (done! I think.)
+
+## Cool Ideas
+
+Place any cool new project ideas here!
+ - NJMS game servers
+ - NJMS wiki or knowledge base so M1's can get up to speed more easily
+ - GroupMe replacement
