@@ -54,7 +54,9 @@ function generateCalendar(fileName: string) {
 
     const c = new Calendar(calendarName, '');
     calendarSource.forEach((event, index) => {
-        event.time = event.time === 'Anytime' ? '' : event.time;
+        if (event.time === 'Anytime' || event.time === 'anytime') {
+            event.time = '';
+        }
 
         let allDay: boolean = event.time.length < 3;
         const day = new Date(event.date + ' 00:00:00 EST');//should always be the same EST/DST day, transition happens at 2am
