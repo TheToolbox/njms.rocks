@@ -58,7 +58,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                         humidity: average(data.humidity),
                         timestamp: Math.round(average(data.timestamp)),
                     };
-                    await db.addTemp(average(data.temperature));
+                    await db.addTemp(average(data.temperature), data.location, 'C'); //may want to dynamically get temperature unit in the future
                     return response.end();
                 } catch (e) {
                     response.statusCode = 400;

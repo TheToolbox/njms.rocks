@@ -8,12 +8,16 @@ const schema = [
         timestamp bigint,
         temperature numeric,
         PRIMARY KEY(timestamp)
-    );`];
+    );`,
+    `ALTER TABLE temperatures
+        ADD COLUMN location TEXT,
+        ADD COLUMN unit CHARACTER;`,
+    ];
 
-export async function addTemp(temperature: number) {
+export async function addTemp(temperature: number, location: string, unit: string) {
     await ready();
-    await pool.query('INSERT INTO temperatures(timestamp, temperature) VALUES($1, $2)',
-        [Date.now(), temperature]);
+    await pool.query('INSERT INTO temperatures(timestamp, temperature, location, unit) VALUES($1, $2, $3, $4)',
+        [Date.now(), temperature, location, unit]);
 }
 
 export async function getTemp() {
