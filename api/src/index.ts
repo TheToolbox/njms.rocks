@@ -52,7 +52,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                 const body = await getBody(request);
                 try {
                     const data = JSON.parse(body) as IncomingData;
-                    console.log("Got new data: " + data.temperature);
+                    console.log("Got new data: " + body);
                     state[data.location] = {
                         temperature: average(data.temperature),
                         humidity: average(data.humidity),
