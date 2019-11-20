@@ -58,7 +58,7 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                         humidity: average(data.humidity),
                         timestamp: Math.round(average(data.timestamp)),
                     };
-                    await db.addTemp(Number(data.temperature));
+                    await db.addTemp(average(data.temperature));
                     return response.end();
                 } catch (e) {
                     response.statusCode = 400;
