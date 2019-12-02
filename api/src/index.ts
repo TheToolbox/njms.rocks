@@ -52,13 +52,13 @@ async function respond(request: http.IncomingMessage, response: http.ServerRespo
                 const body = await getBody(request);
                 try {
                     const data = JSON.parse(body) as IncomingData;
-                    console.log("Got new data: " + data.temperature);
+                    console.log("Got new data: " + body);
                     state[data.location] = {
                         temperature: average(data.temperature),
                         humidity: average(data.humidity),
                         timestamp: Math.round(average(data.timestamp)),
                     };
-                    await db.addTemp(Number(data.temperature));
+                    await db.addTemp(average(data.temperature), data.location, 'C'); //may want to dynamically get temperature unit in the future
                     return response.end();
                 } catch (e) {
                     response.statusCode = 400;
