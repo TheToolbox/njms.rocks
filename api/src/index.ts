@@ -1,14 +1,24 @@
 import * as http from 'http';
 import * as URL from 'url';
-import * as persist from 'node-persist';
 import * as db from './db';
+import * as NWS from './NWS';
 
 async function init() {
-    const p = await persist.init();
-
     console.log('Starting API server...');
     const server = http.createServer(respond);
     server.listen(80);
+
+    console.log('Starting weather logging...');
+    setInterval(async () => {
+        try {
+            const location = { site: 'OKX', gridx: 26, gridy: 34 }; //newark near school
+            const weather = await NWS.currentWeather(location);
+            console.log(`Got current weather! Temp: ${weather.temp}`);
+            await db.addTemp(weather.temp, 'outside', weather.tempUnit);
+        } catch (err) {
+            console.log(`Error in temp logging: ${err.message}`);
+        }
+    }, 1000 * 5); //every 30 minutes
 
     if (process.env['SIMULATE_SENSORS']) {
 
