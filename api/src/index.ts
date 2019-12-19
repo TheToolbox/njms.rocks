@@ -18,7 +18,7 @@ async function init() {
         } catch (err) {
             console.log(`Error in temp logging: ${err.message}`);
         }
-    }, 1000 * 5); //every 30 minutes
+    }, 1000 * 60 * 30); //every 30 minutes
 
     if (process.env['SIMULATE_SENSORS']) {
 
