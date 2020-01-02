@@ -54,7 +54,7 @@ function generateCalendar(fileName: string) {
 
     const c = new Calendar(calendarName, '');
     calendarSource.forEach((event, index) => {
-        if (event.time === 'Anytime' || event.time === 'anytime') {
+        if (event.time.toLowerCase() === 'anytime' || event.time.toLowerCase() === 'all day') {
             event.time = '';
         }
 
