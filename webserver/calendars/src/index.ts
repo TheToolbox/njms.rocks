@@ -43,7 +43,7 @@ function generateCalendar(fileName: string) {
 
             return {
                 date: parts[1] + ' ' + parts[0],
-                time: parts[2] || '',
+                time: parts[2].toLowerCase().replace(/(am|pm)/g, ' $1') || '', //add a space before any instances of am/pm
                 length: parts[3] || '',
                 lecture: parts[4] || '',
                 name: parts[5],
