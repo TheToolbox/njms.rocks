@@ -6,6 +6,7 @@ const sources = fs.readdirSync(calendarDir)
     .filter(fileName => fileName.indexOf('.csv') > -1)
     .forEach(generateCalendar);
 
+process.env.TZ = 'America/New_York'; //set time zone
 
 function generateCalendar(fileName: string) {
     const calendarName = fileName.substring(0, fileName.lastIndexOf('.'));
@@ -59,8 +60,7 @@ function generateCalendar(fileName: string) {
         }
 
         let allDay: boolean = event.time.length < 3;
-        const day = new Date(event.date + ' 00:00:00 EST');//should always be the same EST/DST day, transition happens at 2am
-        let start: Date = allDay ? new Date(event.date + ' 00:00:00 ' + timezone(day)) : new Date(event.date + ' ' + event.time + ' ' + timezone(day));
+        let start: Date = allDay ? new Date(event.date + ' 00:00:00') : new Date(event.date + ' ' + event.time);
         const end = new Date(start);
         end.setTime(end.getTime() + (Number(event.length) * 60 * 60 * 1000));
         if (!isFinite(start.getTime()) || !isFinite(end.getTime())) {
@@ -87,17 +87,3 @@ function generateCalendar(fileName: string) {
     fs.writeFileSync(calendarDir + '/' + calendarName + '.ical', c.toString());
 }
 
-function timezone(date: Date): string {
-    //works only for Eastern Time observed by NJ
-    //this needs to be waaaaaaaaaay more robust
-    const month = date.getUTCMonth();
-    const day = date.getUTCDate();
-    const pastMar11 = month > 2 || (month === 2 && day >= 11);
-    const beforeNov4 = month < 10 || (month === 10 && day < 4);
-    if (pastMar11 && beforeNov4) { // between mar 11 (2am) and nov 4 (2am)
-        //It's DST!
-        return 'EDT';
-    } else {
-        return 'EST';
-    }
-}
