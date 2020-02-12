@@ -1,12 +1,13 @@
 import Calendar from './ical';
 import * as fs from 'fs';
 
+process.env.TZ = 'America/New_York'; //set time zone (make sure to do this before generating the calendars... duh.)
+
 const calendarDir = './calendars';
 const sources = fs.readdirSync(calendarDir)
     .filter(fileName => fileName.indexOf('.csv') > -1)
     .forEach(generateCalendar);
 
-process.env.TZ = 'America/New_York'; //set time zone
 
 function generateCalendar(fileName: string) {
     const calendarName = fileName.substring(0, fileName.lastIndexOf('.'));
